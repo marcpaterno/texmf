@@ -1,0 +1,19 @@
+\startbuffer[water]
+Drink geen water \crlf direct uit de kraan! \blank
+
+\start
+  \tfx \setupinterlinespace Het drinkwater is tijdelijk niet betrouwbaar.
+  Kook het water voor consumptie ten minste 2~minuten. Zodra het water
+  weer betrouwbaar is, krijgt u bericht. \par
+\stop
+
+\blank[2*big]
+
+\language[en] Do not drink water \crlf directly from the tap! \blank
+
+\start
+  \tfx \setupinterlinespace The water is temporarily unfit for drinking.
+  Boil the water during at least 2~minutes before consumption. As soon
+  as the water is reliable again, you will be notified. \par
+\stop
+\stopbuffer

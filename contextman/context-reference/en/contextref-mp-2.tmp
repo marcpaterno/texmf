@@ -1,0 +1,3 @@
+\startMPgraphic
+  fill unitsquare scaled 100 withcolor \MPcolor{mark} ;
+\stopMPgraphic

@@ -1,0 +1,13 @@
+\unprotect
+
+\setupframed[\c!background=MPcircleA,\c!frame=\v!off,\c!offset=\v!none]
+
+\framed
+  [\c!width=6cm,\c!height=5cm]
+  {\vfil \ConTeXt \vfil \vfil
+   \leavevmode\framed[\c!width=.5\hsize,\c!height=.3\hsize]
+     {\vfil \TeX \vfil }
+   \vfil\vfil}
+
+\protect
+

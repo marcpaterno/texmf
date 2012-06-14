@@ -1,0 +1,7 @@
+\setupfootnotes
+  [location=columns,
+   background=color,
+   backgroundcolor=white]
+
+\setuplayout
+  [grid=yes]

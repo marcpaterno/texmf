@@ -1,0 +1,12 @@
+\starttable[|l|l|l|]
+\HL
+\VL \bf input \VL \bf normal \VL \bf hyphenated \VL\SR
+\HL
+\VL \ShowComposed intra||word   \VL\FR
+\VL \ShowComposed intra|-|word  \VL\MR
+\VL \ShowComposed intra|(|word) \VL\MR
+\VL \ShowComposed (intra|)|word \VL\MR
+\VL \ShowComposed intra|--|word \VL\MR
+\VL \ShowComposed intra|~|word  \VL\LR
+\HL
+\stoptable

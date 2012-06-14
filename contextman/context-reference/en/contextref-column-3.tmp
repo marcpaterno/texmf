@@ -1,0 +1,3 @@
+\def\FramedColumn#1%
+  {\hbox to \hsize
+     {\ifodd\currentcolumn\unhbox\hss#1\else\unhbox#1\hss\fi}}

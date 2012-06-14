@@ -1,0 +1,59 @@
+\switchtobodyfont[9pt]
+\starttabulate[|l|l|l|p(4.5cm)|]
+\NC \bf Identifier       \NC \bf file  \NC \bf Encodings      \NC \bf Supported styles \NC \FR
+\NC lucida               \NC type-buy  \NC 8r, ec, texnansi   \NC serif, sans, mono, handwriting,\crlf
+                                                                  calligraphy, math, boldmath, \crlf
+                                                                  bfmath, casual, fax \NC \NR
+\NC informal             \NC type-buy \NC -- hardcoded --     \NC casual, math\NC \NR
+\NC officina             \NC type-buy \NC 8r, ec, texnansi    \NC serif, sans\NC \NR
+\NC meta                 \NC type-buy \NC 8r, ec, texnansi    \NC serif, sans, expert \NC \NR
+\NC meta-medium          \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-lf              \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-book            \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-book-lf         \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-bold            \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-bold-lf         \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-normal          \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-normal-lf       \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-medium          \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-medium-lf       \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-black           \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC meta-black-lf        \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC univers              \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC univers-light        \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC univers-black        \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC mendoza              \NC type-buy \NC 8r, ec, texnansi    \NC serif \NC \NR
+\NC frutiger             \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC kabel                \NC type-buy \NC 8r, ec, texnansi    \NC sans \NC \NR
+\NC thesans              \NC type-buy \NC 8r, ec, texnansi    \NC sans, mono, expert \NC \NR
+\NC sabon                \NC type-buy \NC 8r, ec, texnansi    \NC serif \NC \NR
+\NC stone                \NC type-buy \NC ec, texnansi        \NC serif, sans \NC \NR
+\NC stone-oldstyle       \NC type-buy \NC -- synonyms only -- \NC serif, sans \NC \NR
+\NC industria            \NC type-buy \NC ec, texnansi        \NC sans \NC \NR
+\NC bauhaus              \NC type-buy \NC ec, texnansi        \NC sans \NC \NR
+\NC swift                \NC type-buy \NC ec, texnansi        \NC serif \NC \NR
+\NC swift-light          \NC type-buy \NC -- synonyms only -- \NC serif \NC \NR
+\NC syntax               \NC type-buy \NC ec, texnansi        \NC sans \NC \NR
+\NC linoletter           \NC type-buy \NC ec, texnansi        \NC serif \NC \NR
+\NC zapfino              \NC type-ghz \NC 8r, ec, texnansi    \NC serif, handwriting\NC \NR
+\NC palatino-sans-light  \NC type-exp \NC texnansi, ec        \NC sans\NC \NR
+\NC palatino-sans-normal \NC type-exp \NC texnansi, ec        \NC sans\NC \NR
+\NC palatino-sans-medium \NC type-exp \NC texnansi, ec        \NC sans\NC \NR
+\NC opus                 \NC type-fsf \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC typewriter           \NC type-fsf \NC 8r, ec, texnansi    \NC mono\NC \NR
+\NC garamond             \NC type-fsf \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC optima               \NC type-ghz \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC optima-nova          \NC type-ghz \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC optima-nova-os       \NC type-ghz \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC optima-nova-light    \NC type-ghz \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC optima-nova-medium   \NC type-ghz \NC 8r, ec, texnansi    \NC sans\NC \NR
+\NC palatino             \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC palatino-nova        \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC palatino-nova-os     \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC palatino-nova-light  \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC palatino-nova-medium \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC aldus-nova           \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC melior               \NC type-ghz \NC 8r, ec, texnansi    \NC serif\NC \NR
+\NC verdana              \NC type-msw \NC texnansi            \NC sans\NC \NR
+\NC arial                \NC type-msw \NC texnansi            \NC sans\NC \NR
+\stoptabulate

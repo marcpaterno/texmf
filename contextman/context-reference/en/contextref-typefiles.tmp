@@ -1,0 +1,23 @@
+\begingroup
+\switchtobodyfont[9pt]
+\vskip 1ex
+\starttabulate[|l|l|l|l|l|]
+\NC \bf File   \NC \bf Loaded     \NC \bf Loaded    \NC \bf Loaded   \NC \bf Description \NC \NR
+\NC            \NC \bf by \PDFTEX \NC \bf by \XETEX \NC \bf by \MKIV \NC                 \NC \FR
+\NC type-akb   \NC no             \NC no            \NC no           \NC PostScript fonts using psnfss names (Type~1)\NC \NR
+\NC type-buy   \NC no             \NC no            \NC no           \NC Various commercial fonts (Type~1)\NC \NR
+\NC type-cbg   \NC no             \NC no            \NC no           \NC Greek free fonts (Type~1)\NC \NR
+\NC type-cow   \NC no             \NC no            \NC no           \NC The \CONTEXT\ cow font (Type~1)\NC \NR
+\NC type-exp   \NC no             \NC no            \NC no           \NC Commercial Zapf fonts (OpenType)\NC \NR
+\NC type-fsf   \NC no             \NC no            \NC no           \NC Commercial Fontsite 500 fonts (Type~1)\NC \NR
+\NC type-ghz   \NC no             \NC no            \NC no           \NC Commercial Zapf fonts (Type~1)\NC \NR
+\NC type-gyr   \NC no             \NC no            \NC no           \NC The \TeX\ Gyre project fonts (Type~1)\NC \NR
+\NC type-hgz   \NC no             \NC no            \NC no           \NC Commercial Zapf fonts (OpenType)\NC \NR
+\NC type-msw   \NC no             \NC no            \NC no           \NC Fonts that come with Microsoft Windows (Type~1)\NC \NR
+\NC type-omg   \NC no             \NC no            \NC no           \NC Omega free fonts (Type~1)\NC \NR
+\NC type-one   \NC yes            \NC no            \NC no           \NC Various free fonts (Type~1)\NC \NR
+\NC type-otf   \NC no             \NC yes           \NC yes          \NC Various free fonts (OpenType)\NC \NR
+\NC type-xtx   \NC no             \NC yes           \NC no           \NC Fonts that come with MacOSX (OpenType)\NC \NR
+\stoptabulate
+\vskip 1ex
+\endgroup

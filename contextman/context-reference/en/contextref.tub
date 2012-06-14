@@ -1,0 +1,11 @@
+\thisisblockversion{1996.03.10}
+\thisissectionseparator{-}
+
+\thisisblock{exampletext}{2--0-14-4-0-0-0-0}[]
+
+If you wonder why this mechanism was implemented consider an educational
+document with hundreds of \quote {nice to know} and \quote {need to know}
+text blocks at several ability levels.
+
+\thiswasblock{exampletext}
+

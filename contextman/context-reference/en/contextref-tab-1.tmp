@@ -1,0 +1,13 @@
+\starttable[|l|l|]
+\HL
+\VL \bf command   \VL \bf meaning     \VL\SR
+\HL
+\VL \type{\FR}    \VL First Row       \VL\FR
+\VL \type{\LR}    \VL Last Row        \VL\MR
+\VL \type{\MR}    \VL Mid Row         \VL\MR
+\VL \type{\SR}    \VL Separate Row    \VL\MR
+\VL \type{\NR}    \VL No Row          \VL\MR
+\VL               \VL                 \VL\MR
+\VL \type{\AR}    \VL Auto Row        \VL\LR
+\HL
+\stoptable

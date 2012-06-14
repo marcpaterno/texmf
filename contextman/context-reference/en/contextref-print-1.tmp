@@ -1,0 +1,39 @@
+\unprotect
+
+\startcombination[4*4]
+  {\showprint[][]}
+     {\strut}
+  {\showprint[][][\c!location=\v!middle]}
+     {\tttf\c!location=\v!middle}
+  {\showprint[][][\c!location=\v!middle,\c!marking=\v!on]}
+     {\tttf\c!marking=\v!on\break\c!location=\v!middle}
+  {\showprint[][][\c!location=\v!middle,\c!marking=\v!on,\c!nx=2]}
+     {\tttf\c!marking=\v!on\break\c!location=\v!middle\break\c!nx=2}
+  {\showprint[][][\c!location=\v!left]}
+     {\tttf\c!location=\v!left}
+  {\showprint[][][\c!location=\v!right]}
+     {\tttf\c!location=\v!right}
+  {\showprint[][][\c!location={\v!left,\v!bottom}]}
+     {\tttf\c!location={\v!left,\v!bottom}}
+  {\showprint[][][\c!location={\v!right,\v!bottom}]}
+     {\tttf\c!location={\v!right,\v!bottom}}
+  {\showprint[][][\c!nx=2,\c!ny=1]}
+     {\tttf\c!nx=2,\c!ny=1}
+  {\showprint[][][\c!nx=1,\c!ny=2]}
+     {\tttf\c!nx=1,\c!ny=2}
+  {\showprint[][][\c!nx=2,\c!ny=2]}
+     {\tttf\c!nx=2,\c!ny=2}
+  {\showprint[][][\c!nx=2,\c!ny=2,\c!location=\v!middle]}
+     {\tttf\c!nx=2,\c!ny=2\break\c!location=\v!middle}
+  {\showprint[][][\c!horoffset=3pt]}
+     {\tttf\c!horoffset=.5cm}
+  {\showprint[][][\c!veroffset=3pt]}
+     {\tttf\c!veroffset=.5cm}
+  {\showprint[][][\c!scale=1.5]}
+     {\tttf\c!scale=1.5}
+  {\showprint[][][\c!scale=0.8]}
+     {\tttf\c!scale=0.8}
+\stopcombination
+
+\protect
+

@@ -1,0 +1,3 @@
+\definelogo
+  [small logo] [bottom] [middle]
+  [command=\ContextLogo,state=start]

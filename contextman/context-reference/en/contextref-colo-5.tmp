@@ -1,0 +1,35 @@
+\vbox
+  {\forgetall
+   \ttx
+   \def\y{screen}
+   \def\n{}
+   \offinterlineskip
+   \def\rijtjenamen#1#2#3#4#5#6#7#8
+     {\hbox
+        {\framed[width=4em,frame=off]{#1}%
+         \hskip.25em
+         \framed[background=#3,backgroundscreen=.9]{#2{leftedge}}%
+         \hskip.25em
+         \framed[background=#4,backgroundscreen=.9]{#2{leftmargin}}%
+         \hskip.25em
+         \framed[background=#5,backgroundscreen=#8]{#2{text}}%
+         \hskip.25em
+         \framed[background=#6,backgroundscreen=.9]{#2{rightmargin}}%
+         \hskip.25em
+         \framed[background=#7,backgroundscreen=.9]{#2{rightedge}}}}%
+   \setupframed[width=6.5em]
+   \bgroup
+   \setupframed[frame=off]
+   \rijtjenamen{}\hbox \n\n\n\n\n .9
+   \egroup
+   \vskip.125em
+   \rijtjenamen{top}\hphantom \n\n\n\n\n .9
+   \vskip.25em
+   \rijtjenamen{header}\hphantom \n\y\y\y\n .9
+   \vskip.25em
+   \rijtjenamen{text}\hphantom \n\y\y\y\n .5
+   \vskip.25em
+   \rijtjenamen{footer} \hphantom \n\y\y\y\n .9
+   \vskip.25em
+   \rijtjenamen{bottom}\hphantom \n\n\n\n\n .9
+   \vskip.25em}

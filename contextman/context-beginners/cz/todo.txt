@@ -1,0 +1,5 @@
+- uvodni kapitola: instalace (minimal context distribution)
+- slovnicek en<->cz interface
+- aktualni nastaveni parametru (in \shortsetup)
+- ceske hlasky v \shortsetup
+- startframedtext

@@ -1,0 +1,36 @@
+\def\next#1 #2 #3 #4 #5\\% plus minus gaat hier niet (catcodes)
+  {\advance\dimen0 by #1
+   \advance\dimen0 by #3}
+
+\dimen0=4\linewidth
+\expandafter\next\the\bigskipamount\\
+\expandafter\next\the\medskipamount\\
+\expandafter\next\the\smallskipamount\\
+
+\startlinecorrection
+\midaligned{\startcombination[3]
+  {\vbox to \dimen0
+     {\hsize=.3\hsize
+      \hrule height \linewidth width \hsize \vskip\bigskipamount
+      \hrule height \linewidth width \hsize \vskip\medskipamount
+      \hrule height \linewidth width \hsize \vskip\smallskipamount
+      \hrule height \linewidth width \hsize}}%
+  {\translate[nl=maximale rek,en=maximum stretch]}
+  {\vbox to \dimen0
+     {\hsize=.3\hsize
+      \hrule height \linewidth width \hsize \vskip1\bigskipamount
+      \hrule height \linewidth width \hsize \vskip1\medskipamount
+      \hrule height \linewidth width \hsize \vskip1\smallskipamount
+      \hrule height \linewidth width \hsize}}%
+  {\translate[nl=geen rek,en=no stretch]}
+  {\vbox to \dimen0
+     {\hsize=.3\hsize
+      \hrule height \linewidth width \hsize \vskip\bigskipamount
+      \hrule height \linewidth width \hsize \vskip\medskipamount
+      \hrule height \linewidth width \hsize \vskip\smallskipamount
+      \hrule height \linewidth width \hsize
+      \vskip 3\bigskipamount}}
+  {\translate[nl=minimale rek,en=minimal stretch]}
+\stopcombination}
+\stoplinecorrection
+

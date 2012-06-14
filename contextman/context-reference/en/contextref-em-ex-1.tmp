@@ -1,0 +1,21 @@
+\def\jump{\vl\hskip1em\vl}%
+\def\mmmm{\vl M\vl}%
+\def\dash{\vl---\vl}%
+\def\numb{\vl12\vl}%
+
+\starttable[|c|c|c|c|c|c|]
+\HL
+\VL \type{\tf} \VL \type{\bf} \VL \type{\sl}  \VL
+    \type{\tt} \VL \type{\ss} \VL \type{\tfx} \VL\SR
+\HL
+\VL \tf\numb   \VL \bf\numb   \VL \sl \numb   \VL
+    \tt\numb   \VL \ss\numb   \VL \tfx\numb   \VL\FR
+\VL \tf\mmmm   \VL \bf\mmmm   \VL \sl \mmmm   \VL
+    \tt\mmmm   \VL \ss\mmmm   \VL \tfx\mmmm   \VL\MR
+\VL \tf\jump   \VL \bf\jump   \VL \sl \jump   \VL
+    \tt\jump   \VL \ss\jump   \VL \tfx\jump   \VL\MR
+\VL \tf\dash   \VL \bf\dash   \VL \sl \dash   \VL
+    \tt\dash   \VL \ss\dash   \VL \tfx\dash   \VL\LR
+\HL
+\stoptable
+

@@ -1,0 +1,216 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=cont-en 2009.7.16)  14 AUG 2009 09:37
+entering extended mode
+ %&-line parsing enabled.
+ (/usr/local/texlive/2008/texmf/web2c/natural.tcx)
+**generic-talk-15min-45min.tex \emergencyend
+(./generic-talk-15min-45min.tex
+
+ConTeXt  ver: 2008.05.21 15:21 MKII  fmt: 2009.7.16  int: english/english
+
+language        : language en is active
+system          : cont-new loaded
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/cont-new.tex
+systems         : beware: some patches loaded from cont-new.tex
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/cont-new.mkii)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/cont-mtx.tex))
+system          : cont-old loaded
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/cont-old.tex
+loading         : Context Old Macros
+)
+system          : cont-fil loaded
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/cont-fil.tex
+loading         : Context File Synonyms
+)
+system          : cont-sys loaded
+(/usr/local/texlive/2008/texmf-config/tex/context/user/cont-sys.tex
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex))
+bodyfont        : 12pt rm is loaded
+language        : patterns en->ec:ec->1->2:3 uk->ec:ec->2->2:3 de->texnansi:tex
+nansi->3->2:3 de->ec:ec->4->2:3 fr->texnansi:texnansi->5->2:3 fr->ec:ec->6->2:3
+ es->ec:ec->7->2:3 pt->texnansi:texnansi->8->2:3 pt->ec:ec->9->2:3 it->texnansi
+:texnansi->10->2:3 it->ec:ec->11->2:3 nl->texnansi:texnansi->12->2:3 nl->ec:ec-
+>13->2:3 cz->il2:il2->14->2:3 cz->ec:ec->15->2:3 sk->il2:il2->16->2:3 sk->ec:ec
+->17->2:3 pl->pl0:pl0->18->2:3 pl->ec:ec->19->2:3 pl->qx:qx->20->2:3 loaded
+specials        : tex,postscript,rokicki loaded
+\openout3 = `generic-talk-15min-45min.tui'.
+
+system          : generic-talk-15min-45min.top loaded
+(./generic-talk-15min-45min.top
+specials        : loading definition file tpd
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/spec-tpd.tex
+specials        : loading definition file fdf
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/spec-fdf.tex
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/spec-fdf.mkii))
+specials        : fdf loaded
+)
+specials        : fdf,tpd loaded
+)
+\openout0 = `generic-talk-15min-45min-mpgraph.mp'.
+
+\openout0 = `mpgraph.mp'.
+
+
+systems         : system commands are disabled
+system          : module simpleslides loaded
+
+(/Users/paterno/Library/texmf/tex/context/third/simpleslides/t-simpleslides.tex
+loading         : module simpleslides
+system          : module default loaded
+
+(/Users/paterno/Library/texmf/tex/context/third/simpleslides/simpleslides-f-def
+ault.tex
+simpleslides    : loading default font setup
+system (OLDTEX) : [line 50] 
+system (OLDTEX) : [line 94] 
+system (OLDTEX) : [line 141] 
+system (OLDTEX) : [line 191] 
+system (OLDTEX) : [line 217] 
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-tmf.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-siz.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-one.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-akb.tex)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/type-gyr.tex))
+system          : module default loaded
+
+(/Users/paterno/Library/texmf/tex/context/third/simpleslides/simpleslides-s-def
+ault.tex
+simpleslides    : loading default style setup
+color           : mpcmyk color space is supported
+color           : mpspot color space is supported
+color           : system rgb is global activated
+)
+system          : module BigNumber loaded
+
+(/Users/paterno/Library/texmf/tex/context/third/simpleslides/simpleslides-s-Big
+Number.tex
+simpleslides    : loading Big Number style
+system          : command \NormalHeight is already defined
+system          : command \NormalWidth is already defined
+system          : command \PictureFrameHeight is already defined
+system          : command \PictureFrameWidth is already defined
+color           : specification [s=0] at color simpleslides:textcolor becomes b
+lack
+system (OLDTEX) : [line 85] 
+)) (/usr/local/texlive/2008/texmf-dist/tex/context/base/pdfr-def.tex)
+systems         : begin file generic-talk-15min-45min at line 87
+fonts           : resetting map file list
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/original-empty.map
+}
+fonts           : using map file: original-base
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/original-base.map}
+fonts           : using map file: original-ams-base
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/original-ams-base.
+map}
+fonts           : using map file: original-public-lm
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/original-public-lm
+.map}
+fonts           : using map file: lm-ec
+{/usr/local/texlive/2008/texmf-dist/fonts/map/dvips/lm/lm-ec.map}
+fonts           : using map file: lm-math
+{/usr/local/texlive/2008/texmf-dist/fonts/map/dvips/lm/lm-math.map}
+fonts           : using map file: lm-rm
+{/usr/local/texlive/2008/texmf-dist/fonts/map/dvips/lm/lm-rm.map}
+fonts           : using map file: 8r-base
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/8r-base.map}
+fonts           : using map file: ec-base
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/ec-base.map}
+fonts           : using map file: t5-base
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/t5-base.map}
+fonts           : using map file: original-ams-euler
+{/usr/local/texlive/2008/texmf-dist/fonts/map/pdftex/context/original-ams-euler
+.map}
+fonts           : using map file: qbk-ec
+{/usr/local/texlive/2008/texmf-dist/fonts/map/dvips/tex-gyre/qbk-ec.map}
+fonts           : using map file: qhv-ec
+{/usr/local/texlive/2008/texmf-dist/fonts/map/dvips/tex-gyre/qhv-ec.map}
+\openout7 = `generic-talk-15min-45min-mpgraph.mp'.
+
+\openout6 = `generic-talk-15min-45min-mpgraph.mpb'.
+
+
+[MP generic-talk-15min-45min-mpgraph.4000]
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/sort-def.tex
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/sort-def.mkii))
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/sort-lan.tex
+loading         : Context Sorting Macros (languages)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/sort-lan.mkii)) [1.1]
+! Missing number, treated as zero.
+<to be read again> 
+                   e
+\s!empty ->e
+            mpty
+\externalfigurestamp ... \ifnum \wantedfigurepage 
+                                                  >\zeropoint -\wantedfigure...
+
+\doifobjectfoundelse ...\ifcsname \r!object #1::#2
+                                                  \endcsname \elabelgroup \e...
+<argument> ...foundelse {FIG}\externalfigurestamp 
+                                                  {\doshowfigurestate {objec...
+
+\firstoftwoarguments #1#2->#1
+                             
+...
+l.119   {A Dutch Cow}
+                      % Title of the slide
+? x
+ 
+Here is how much of TeX's memory you used:
+ 5167 strings out of 457587
+ 92229 string characters out of 540612
+ 4686637 words of memory out of 7115580
+ 44663 multiletter control sequences out of 10000+50000
+ 239033 words of font info for 113 fonts, out of 3000000 for 5000
+ 192 hyphenation exceptions out of 8191
+ 79i,18n,112p,293b,1030s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2008/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/loc
+al/texlive/2008/texmf-dist/fonts/type1/public/tex-gyre/qbkr.pfb>
+Output written on generic-talk-15min-45min.pdf (1 page, 29214 bytes).
+PDF statistics:
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 131072)
+ 7 words of extra memory for PDF output out of 10000 (max. 10000000)
+

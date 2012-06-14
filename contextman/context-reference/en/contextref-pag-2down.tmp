@@ -1,0 +1,18 @@
+\unprotect
+
+\hbox
+  {\forgetall
+   \offinterlineskip
+   \setupframed
+     [\c!width=1.5cm,\c!height=1cm,
+      \c!background=\v!screen,\c!backgroundscreen=1]%
+   \vbox{\framed{8}\break\framed{1}}%
+   \hskip.25cm
+   \vbox{\framed{7}\break\framed{2}}%
+   \hskip.25cm
+   \vbox{\framed{6}\break\framed{3}}%
+   \hskip.25cm
+   \vbox{\framed{5}\break\framed{4}}}
+
+\protect
+

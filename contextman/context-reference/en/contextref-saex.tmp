@@ -1,0 +1,2 @@
+\definefont [TitleFont] [Sans]
+{\TitleFont test} and {\tfc \TitleFont test}

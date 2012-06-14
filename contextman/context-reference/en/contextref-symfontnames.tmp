@@ -1,0 +1,42 @@
+\vskip 1ex
+\starttabulate[|lT|lT|l|]
+\NC \rm\bf name          \NC \rm \bf style, alternative \NC \rm \bf explanation \NC \NR
+\NC Blackboard           \NC --       \NC Used by the \type{\bbd}  macro \NC \NR
+\NC Calligraphic         \NC --       \NC Used by the \type{\cal}  macro \NC \NR
+\NC Fraktur              \NC --       \NC Used by the \type{\frak} macro \NC \NR
+\NC Gothic               \NC --       \NC Used by the \type{\goth} macro \NC \NR
+\NC OldStyle             \NC --       \NC Used by the \type{\os} macro   \NC \NR
+\NC MPtxtfont            \NC --       \NC The default font for \METAPOST \NC \NR
+\NC Calligraphy          \NC cg,tf    \NC \NC \NR
+\NC Handwriting          \NC hw,tf    \NC \NC \NR
+\NC MathRoman(Bold)      \NC mm,mr(bf)\NC \NC \NR
+\NC MathItalic(Bold)     \NC mm,mi(bf)\NC \NC \NR
+\NC MathSymbol(Bold)     \NC mm,sy(bf)\NC \NC \NR
+\NC MathExtension(Bold)  \NC mm,ex(bf)\NC \NC \NR
+\NC MathAlpha(Bold)      \NC mm,ma(bf)\NC \NC \NR
+\NC MathBeta(Bold)       \NC mm,mb(bf)\NC \NC \NR
+\NC MathGamma(Bold)      \NC mm,mc(bf)\NC \NC \NR
+\NC MathDelta(Bold)      \NC mm,md(bf)\NC \NC \NR
+\NC Mono                 \NC tt,tf    \NC \NC \NR
+\NC MonoBold             \NC tt,bf    \NC \NC \NR
+\NC MonoItalic           \NC tt,it    \NC \NC \NR
+\NC MonoBoldItalic       \NC tt,bi    \NC \NC \NR
+\NC MonoSlanted          \NC tt,sl    \NC \NC \NR
+\NC MonoBoldSlanted      \NC tt,bs    \NC \NC \NR
+\NC MonoCaps             \NC tt,sc    \NC \NC \NR
+\NC Sans                 \NC ss,tf    \NC \NC \NR
+\NC SansBold             \NC ss,bf    \NC \NC \NR
+\NC SansItalic           \NC ss,it    \NC \NC \NR
+\NC SansBoldItalic       \NC ss,bi    \NC \NC \NR
+\NC SansSlanted          \NC ss,sl    \NC \NC \NR
+\NC SansBoldSlanted      \NC ss,bs    \NC \NC \NR
+\NC SansCaps             \NC ss,sc    \NC \NC \NR
+\NC Serif                \NC rm,tf    \NC \NC \NR
+\NC SerifBold            \NC rm,bf    \NC \NC \NR
+\NC SerifItalic          \NC rm,it    \NC \NC \NR
+\NC SerifBoldItalic      \NC rm,bi    \NC \NC \NR
+\NC SerifSlanted         \NC rm,sl    \NC \NC \NR
+\NC SerifBoldSlanted     \NC rm,bs    \NC \NC \NR
+\NC SerifCaps            \NC rm,sc    \NC \NC \NR
+\stoptabulate
+\vskip 1ex

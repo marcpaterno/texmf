@@ -1,0 +1,22 @@
+\unprotect
+
+\hbox
+  {\forgetall
+   \offinterlineskip
+   \setupframed
+     [\c!width=1cm,\c!height=1.5cm,
+      \c!background=\v!screen,\c!backgroundscreen=1]%
+   \vbox
+     {\hbox
+        {\framed{4}\framed{5}}
+      \rotate[\c!rotation=180]{\hbox
+        {\framed{8}\framed{1}}}}%
+   \hskip.25cm
+   \vbox
+     {\hbox
+        {\framed{3}\framed{6}}
+      \rotate[\c!rotation=180]{\hbox
+        {\framed{2}\framed{7}}}}}
+
+\protect
+

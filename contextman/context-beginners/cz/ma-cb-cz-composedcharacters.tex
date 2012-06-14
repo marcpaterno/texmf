@@ -1,0 +1,173 @@
+% Translation: busaj
+% Checking:    2006-11-14 zyka
+\startcomponent ma-cb-cz-composedcharacters
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Composite characters}
+\chapter{Slo¾ené znaky}
+
+\index{slo¾ené znaky}
+
+%\section{Introduction}
+\section{Úvod}
+
+%In \in{chapter}[special chars] you have already seen that
+%you have to type more than one token to obtain special
+%characters like \# \$ \% \& \_ $\{$ and $\}$. Accented
+%characters or foreign symbols have to be composed to produce
+%the right typesetted character.
+V~\in{kapitole}[special chars] jste ji¾ vidìli, ¾e pro vysázení
+speciálních znakù jako \# \$ \% \& \_ $\{$ a $\}$ musíme
+napsat více ne¾ jeden symbol. Akcentovaná písmena nebo cizokrajné
+symboly musí být slo¾eny z~více znakù, aby byl vytvoøen správnì
+vysázený znak.
+
+%It is not within the scope of this manual to go into
+%accented characters in math mode. See the {\TEX Book by
+%Donald E. Knuth} on that subject.
+Nad rámec této pøíruèky vychází problematika akcentovaných písmen
+v~matematickém re¾imu. Informace o~této problematice najdete
+v~\TEX{}Booku Donalda E.~Knutha.
+
+%\section{Accents}
+\section{Akcenty}
+
+%\index{accents}
+\index{akcenty}
+
+%Accented characters have to be composed in \CONTEXT.
+%\in{Table}[tab:accents] shows you how to do this. The
+%character {\em u} is just an example here.
+Kromì pøímého vstupu znakù s~diakritikou pomocí vhodného kódování (viz
+\in{kapitolu}[sec:encodings]), mù¾eme v~\CONTEXT{}u akcentovaná písmena
+slo¾it z~jednoduchých znakù a~diakritických
+znamének. \in{Tabulka}[tab:accents] ukazuje, jak kompozit
+vytvoøíme. Písmeno {\em u} je uvedeno jenom jako pøíklad.
+
+%\let\MySign=\=
+%\placetable
+%  [here,force]
+%  [tab:accents]
+%  {Accents.}
+%\starttable[|c|c|c|c|]
+%\HL
+%\NC \bf You type \NC \bf You get \VL \bf You type  \NC \bf You get \NC\SR
+%\HL
+%\NC \type{\`{u}} \NC \`{u}       \VL \type{\u{u}}  \NC \u{u}       \NC\FR
+%\NC \type{\'{u}} \NC \'{u}       \VL \type{\v{u}}  \NC \v{u}       \NC\MR
+%\NC \type{\^{u}} \NC \^{u}       \VL \type{\H{u}}  \NC \H{u}       \NC\MR
+%\NC \type{\"{u}} \NC \"{u}       \VL \type{\b{u}}  \NC \b{u}       \NC\MR
+%\NC \type{\~{u}} \NC \~{u}       \VL \type{\c{u}}  \NC \c{u}       \NC\MR
+%\NC \type{\={u}} \NC \MySign{u}  \VL \type{\d{u}}  \NC \d{u}       \NC\MR
+%\NC \type{\.{u}} \NC \.{u}       \VL               \NC             \NC\LR
+%\HL
+%\stoptable
+
+\let\MySign=\=
+\placetable
+  [here,force]
+  [tab:accents]
+  {Akcenty}
+\starttable[|c|c|c|c|]
+\HL
+\NC \bf Napí¹eme \NC \bf Dostaneme \VL \bf Napí¹eme  \NC \bf Dostaneme \NC\SR
+\HL
+\NC \type{\`{u}} \NC \`{u}       \VL \type{\u{u}}  \NC \u{u}       \NC\FR
+\NC \type{\'{u}} \NC \'{u}       \VL \type{\v{u}}  \NC \v{u}       \NC\MR
+\NC \type{\^{u}} \NC \^{u}       \VL \type{\H{u}}  \NC \H{u}       \NC\MR
+\NC \type{\"{u}} \NC \"{u}       \VL \type{\b{u}}  \NC \b{u}       \NC\MR
+\NC \type{\~{u}} \NC \~{u}       \VL \type{\d{u}}  \NC \d{u}       \NC\MR
+\NC \type{\={u}} \NC \MySign{u}  \VL \type{\c{u}}  \NC \c{u}       \NC\MR
+\NC \type{\.{u}} \NC \.{u}       \VL \type{\k{u}}  \NC \k{u}       \NC\LR
+\NC \type{\r{u}} \NC \r{u}       \VL               \NC             \NC\LR
+\HL
+\stoptable
+
+%You don't want \`{i} or \'{j} so for an
+%accented {\em i} and {\em j} you compose the characters as
+%follows:
+Asi nechceme psát písmena \`{i} nebo \'{j} (s~teèkami).
+Z~písmen {\em i} a {\em j} vytvoøíme slo¾ené znaky
+následujícím zpùsobem:
+
+%% \type{\"{\i}} ~~~ \"{\i} %\crlf
+%% \type{\^{\j}} ~~~ \^{\j}
+
+\type{\"{\i}} ~~~ \"{\i}
+\bgroup
+\usetypescript[modern][ec]%
+\setupbodyfont[modern,10pt]%
+\type{\^{\j}} ~~~ \^{\j}
+\egroup
+\hskip1em (j bez teèky nemusí být ve v¹ech písmech k~dispozici)
+
+%\section{Foreign symbols}
+\section{Cizokrajné symboly}
+
+%\index{foreign symbols}
+\index{symboly}
+\index{euro}
+
+\Command{\tex{texteuro}}
+\Command{\tex{usesymbols}}
+\Command{\tex{showsymbolset}}
+
+%The composition of characters that appear in foreign
+%languages is shown in \in{table}[tab:foreign symbols].
+Jak se sestavují písmena a znaky, které se vyskytují v~cizích jazycích,
+uvádí \in{tabulka}[tab:foreign symbols].
+
+%
+% be ware of the spanish questionmark and exclamation
+%
+
+%\placetable
+%  [here,force]
+%  [tab:foreign symbols]
+%  {Foreign characters.}
+%\starttable[|c|c|c|c|]
+%\HL
+%\NC \bf You type \NC \bf You get \VL \bf You type     \NC \bf You get \NC\SR
+%\HL
+%\NC \type{\oe}   \NC \oe         \VL \type{\O}        \NC \O          \NC\FR
+%\NC \type{\OE}   \NC \OE         \VL \type{\l}        \NC \l          \NC\MR
+%\NC \type{\ae}   \NC \ae         \VL \type{\L}        \NC \L          \NC\MR
+%\NC \type{\AE}   \NC \AE         \VL \type{\SS}       \NC \SS         \NC\MR
+%\NC \type{\aa}   \NC \aa         \VL \type{?}\type{`} \NC ?`          \NC\MR
+%\NC \type{\AA}   \NC \AA         \VL \type{!}\type{`} \NC !`          \NC\MR
+%\NC \type{\o}    \NC \o          \VL                  \NC             \NC\LR
+%\HL
+%\stoptable
+
+\placetable
+  [here,force]
+  [tab:foreign symbols]
+  {Cizokrajná písmena a~znaky}
+\starttable[|c|c|c|c|]
+\HL
+\NC \bf Napí¹eme \NC \bf Dostaneme \VL \bf Napí¹eme     \NC \bf Dostaneme \NC\SR
+\HL
+\NC \type{\oe}   \NC \oe         \VL \type{\O}        \NC \O          \NC\FR
+\NC \type{\OE}   \NC \OE         \VL \type{\l}        \NC \l          \NC\MR
+\NC \type{\ae}   \NC \ae         \VL \type{\L}        \NC \L          \NC\MR
+\NC \type{\AE}   \NC \AE         \VL \type{\SS}       \NC \SS         \NC\MR
+\NC \type{\aa}   \NC \aa         \VL \type{?}\type{`} \NC ?`          \NC\MR
+\NC \type{\AA}   \NC \AA         \VL \type{!}\type{`} \NC !`          \NC\MR
+\NC \type{\o}    \NC \o          \VL \type{\texteuro} \NC \texteuro   \NC\LR
+\HL
+\stoptable
+
+Mnoho dal¹ích symbolù je definováno v~externích mno¾inách. Zavádìjí se
+pøíkazem
+
+\shortsetup{usesymbols}
+
+V~hranatých závorkách je trojpísmenný název mno¾iny, napø. \type{eur},
+\type{nav}, \type{mvs}, \type{jmn}, \type{uni}. Seznam znakù dané
+mno¾iny se zobrazí pøíkazem
+
+\shortsetup{showsymbolset}
+
+\stopcomponent

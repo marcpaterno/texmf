@@ -1,0 +1,77 @@
+% Translation: 2006-10-02 Vít Zýka
+% Checking:    2006-11-14 zyka
+\startcomponent ma-cb-cz-alignments
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Alignment}
+\chapter{Zarovnání}
+
+%\index{alignment}
+\index{zarovnání}
+
+\Command{\tex{setupalign}}
+\Command{\tex{setup tolerance}}
+\Command{\tex{rightaligned}}
+\Command{\tex{leftlines}}
+\Command{\tex{midaligned}}
+
+%Horizontal and vertical alignment can be set up with:
+Horizontální a~vertikální zarovnání textu se nastavuje pomocí
+
+\shortsetup{setupalign}
+
+%Single lines can be aligned with:
+Pro zarovnání jedné øádky staèí uvést:
+
+\starttyping
+\rightaligned{}
+\leftaligned{}
+\midaligned{}
+\stoptyping
+
+Napø.
+
+%% \startbuffer
+%% \leftaligned  {Hasselt was built on a sandhill.}
+%% \midaligned   {Hasselt was built on the crossing of two rivers.}
+%% \rightaligned {Hasselt's name stems from hazelwood.}
+%% \stopbuffer
+
+\startbuffer
+\leftaligned  {Hasselt byl vybudován na píseèné hoøe.}
+\midaligned   {Hasselt byl vybudován na soutoku dvou øek.}
+\rightaligned {Hasselt byl pojmenován podle døeva
+               stromu ambronì (hazelwood).}
+\stopbuffer
+
+\typebuffer
+
+%After processing this would look like:
+Po zpracování bude tento pøíklad vypadat takto:
+
+\getbuffer
+
+%Alignment of a paragraph is done with:
+K~zarovnání odstavce se pou¾ije:
+
+\shortsetup{startalignment}
+
+%% In case of alignment you can specify a tolerance and the
+%% direction (vertical or horizontal). Normally the tolerance
+%% is \type{verystrict}. In colums you could specify
+%% \type{verytolerant}. The tolerance in this manual is:
+Zarovnání mù¾eme upøesnit zadáním smìru (\type{direction}) a~tolerance
+pru¾ných výplòkù (\type{tolerance}). Smìr mù¾e být
+vertikální (\type{vertical}) a~horizontální
+(\type{horizontal}). Tolerance je standardnì velmi pøísná
+(\type{verystrict}). Pøi sazbì do u¾¹ích sloupcù je u¾iteèné povolit
+schovívavìj¹í pøístup k~zalamování odstavce (\type{tolerant} nebo
+\type{verytolerant}). Pro sazbu tohoto manuálu je tolerance nastavena takto:
+
+\starttyping
+\setuptolerance[horizontal,verystrict]
+\stoptyping
+
+\stopcomponent

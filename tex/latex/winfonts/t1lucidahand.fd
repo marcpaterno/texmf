@@ -1,0 +1,13 @@
+\ProvidesFile{t1lucidahand.fd}[lucidahand]
+
+\DeclareFontFamily{T1}{lucidahand}{}
+\DeclareFontShape{T1}{lucidahand}{b}{n}{<->eclucidahandbd}{}
+\DeclareFontShape{T1}{lucidahand}{b}{sl}{<-> eclucidahandbdo}{}
+\DeclareFontShape{T1}{lucidahand}{b}{it}{<-> eclucidahandbi}{}
+\DeclareFontShape{T1}{lucidahand}{m}{n}{<-> eclucidahand}{}
+\DeclareFontShape{T1}{lucidahand}{m}{sl}{<-> eclucidahando}{}
+\DeclareFontShape{T1}{lucidahand}{m}{it}{<-> eclucidahandi}{}
+\DeclareFontShape{T1}{lucidahand}{bx}{n}{<->ssub * lucidahand/b/n}{}
+\DeclareFontShape{T1}{lucidahand}{bx}{sl}{<->ssub * lucidahand/b/sl}{}
+\DeclareFontShape{T1}{lucidahand}{bx}{it}{<->ssub * lucidahand/b/it}{}
+\endinput

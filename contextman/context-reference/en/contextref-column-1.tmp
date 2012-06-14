@@ -1,0 +1,3 @@
+\def\FramedColumn#1{\ruledhbox{\box#1}}
+
+\setupcolumns[command=\FramedColumn]

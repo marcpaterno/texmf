@@ -1,0 +1,2 @@
+\setbox0=\vbox{The Final Cut\par --- \em Pink Floyd}
+\makecutbox0 \box0

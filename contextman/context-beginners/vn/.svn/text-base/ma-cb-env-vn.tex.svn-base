@@ -1,0 +1,9 @@
+\startenvironment ma-cb-env-vn
+
+\mainlanguage[vn]
+\language[vn]
+\enableregime[utf]
+\setupencoding[default=t5]
+
+\stopenvironment
+

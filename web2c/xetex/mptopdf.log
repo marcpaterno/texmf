@@ -1,0 +1,141 @@
+This is XeTeXk, Version 3.1415926-2.2-0.999.6 (Web2C 7.5.7) (INITEX)  7 SEP 2009 13:40
+entering extended mode
+ %&-line parsing enabled.
+***mptopdf
+(/usr/local/texlive/2008/../texmf-local/tex/generic/context/mptopdf.tex
+(/usr/local/texlive/2008/../texmf-local/tex/context/base/syst-tex.mkii
+(/usr/local/texlive/2008/texmf-dist/tex/plain/base/plain.tex
+Preloading the plain format: codes, registers,
+\maxdimen=\dimen10
+\hideskip=\skip10
+\centering=\skip11
+\p@=\dimen11
+\z@=\dimen12
+\z@skip=\skip12
+\voidb@x=\box10
+ parameters,
+\smallskipamount=\skip13
+\medskipamount=\skip14
+\bigskipamount=\skip15
+\normalbaselineskip=\skip16
+\normallineskip=\skip17
+\normallineskiplimit=\dimen13
+\jot=\dimen14
+\interdisplaylinepenalty=\count23
+\interfootnotelinepenalty=\count24
+ fonts,
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+more fonts,
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping scaled \font in plain
+skipping scaled \font in plain
+skipping scaled \font in plain
+skipping \font in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+\itfam=\fam4
+skipping \textfont in plain
+\slfam=\fam5
+skipping \textfont in plain
+\bffam=\fam6
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+\ttfam=\fam7
+skipping \textfont in plain
+macros,
+\strutbox=\box11
+\mscount=\count25
+\tabs=\box12
+\tabsyet=\box13
+\tabsdone=\box14
+ math definitions,
+\rootbox=\box15
+\p@renwd=\dimen15
+
+skipping used \tenex in plain
+output routines,
+\headline=\toks10
+\footline=\toks11
+\footins=\insert254
+\topins=\insert253
+ hyphenation
+skipping \input in plain
+skipping \tenrm in plain
+)) (/usr/local/texlive/2008/../texmf-local/tex/context/base/supp-mis.mkii
+loading : ConTeXt Support Macros / Miscellaneous (2004.10.26)
+) (/usr/local/texlive/2008/../texmf-local/tex/context/base/supp-pdf.mkii
+loading : ConTeXt Support Macros / PDF
+) (/usr/local/texlive/2008/../texmf-local/tex/context/base/supp-mpe.mkii
+loading : ConTeXt Support Macros / MPS extensions
+) )
+Beginning to dump on file mptopdf.fmt
+ (format=mptopdf 2009.9.7)
+68080 strings of total length 40850
+13652 memory locations dumped; current usage is 113&13508
+1631 multiletter control sequences
+\font\nullfont=nullfont
+0 words of font info for 0 preloaded fonts
+0 hyphenation exceptions
+Hyphenation trie of length 257 has 0 ops out of 35111
+No pages of output.

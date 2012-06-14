@@ -1,0 +1,25 @@
+\definetabulate[sometable][|c|c|c|c|c|]
+
+\unprotect
+
+\startsometable
+\noalign
+  {\vskip\lineheight
+   \color[gray]{\hrule height \ht\strutbox depth \dp\strutbox}
+   \vskip-2\lineheight
+   \nobreak}
+\NC \hbox{\externalfigure[cow][\c!height=1cm,\c!frame=\v!on]} \NC
+    \vbox{\externalfigure[cow][\c!height=1cm,\c!frame=\v!on]} \NC
+    \sbox{\externalfigure[cow][\c!height=1cm,\c!frame=\v!on]} \NC
+    \tbox{\externalfigure[cow][\c!height=1cm,\c!frame=\v!on]} \NC
+    \bbox{\externalfigure[cow][\c!height=1cm,\c!frame=\v!on]} \NC \NR
+\noalign{\nobreak}
+\NC \type {\hbox} \NC
+    \type {\vbox} \NC
+    \type {\sbox} \NC
+    \type {\tbox} \NC
+    \type {\bbox} \NC \NR
+\stopsometable
+
+\protect
+

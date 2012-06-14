@@ -1,0 +1,60 @@
+\switchtobodyfont[9pt]
+\starttabulate[|l|l|l|p(3.5cm)|]
+\NC \bf Identifier             \NC \bf file  \NC \bf Encodings               \NC \bf Supported styles \NC \FR
+\NC modern                     \NC type-one  \NC ec, qx, texnansi, t5        \NC serif, sans, mono, math, \crlf
+                                                                                 boldmath, bfmath \NC \NR
+\NC latin-modern               \NC type-one  \NC ec, qx, texnansi, t5        \NC serif, sans, mono, math, \crlf
+                                                                                 boldmath, bfmath \NC \NR
+\NC computer-modern            \NC type-one  \NC t2a/b/c                     \NC serif, sans, mono, math, \crlf %removed lcy,cyr,x2
+                                                                                 boldmath, bfmath \NC \NR
+\NC simple                     \NC type-one  \NC -- synonyms only --         \NC serif \NC \NR
+\NC concrete                   \NC type-one  \NC -- hardcoded --             \NC serif \NC \NR
+\NC euler                      \NC type-one  \NC -- hardcoded --             \NC math, boldmath, bfmath\NC \NR
+\NC ams                        \NC type-one  \NC -- hardcoded --             \NC math\NC \NR
+\NC fourier                    \NC type-one  \NC ec                          \NC math, serif \NC \NR
+\NC courier                    \NC type-one  \NC 8r, ec, qx, texnansi, t5    \NC mono \NC \NR
+\NC helvetica                  \NC type-one  \NC 8r, ec, qx, texnansi, t5    \NC sans \NC \NR
+\NC times                      \NC type-one  \NC 8r, ec, qx, texnansi, t5    \NC serif, math \NC \NR
+\NC palatino                   \NC type-one  \NC 8r, ec, qx, texnansi, t5    \NC serif, math \NC \NR
+\NC bookman                    \NC type-one  \NC 8r, ec, qx, texnansi, t5    \NC serif \NC \NR
+\NC schoolbook                 \NC type-one  \NC 8r, ec, texnansi, t5        \NC serif \NC \NR
+\NC chancery                   \NC type-one  \NC 8r, ec, qx, texnansi        \NC calligraphy \NC \NR
+\NC charter                    \NC type-one  \NC 8r, ec, texnansi            \NC serif \NC \NR
+\NC utopia                     \NC type-one  \NC ec, texnansi                \NC serif \NC \NR
+\NC antykwa-torunska           \NC type-one  \NC ec, qx, texnansi, t5, t2a/b/c, greek \NC serif, math \NR
+\NC antykwa-torunska-light     \NC type-one  \NC ec, qx, texnansi, t5, t2a/b/c, greek \NC serif, math \NR
+\NC antykwa-torunska-cond      \NC type-one  \NC ec, qx, texnansi, t5, t2a/b/c, greek \NC serif, math \NR
+\NC antykwa-torunska-lightcond \NC type-one  \NC ec, qx, texnansi, t5, t2a/b/c, greek \NC serif, math \NR
+\NC antykwa-poltawskiego       \NC type-one  \NC 8r, ec, texnansi                   \NC serif \NR
+\NC iwona                      \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC iwona-light                \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC iwona-medium               \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC iwona-heavy                \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC iwona-cond                 \NC type-one  \NC ec, qx, texnansi, t5               \NC sans \NC \NR
+\NC iwona-light-cond           \NC type-one  \NC ec, qx, texnansi, t5               \NC sans \NC \NR
+\NC iwona-medium-cond          \NC type-one  \NC ec, qx, texnansi, t5               \NC sans \NC \NR
+\NC iwona-heavy-cond           \NC type-one  \NC ec, qx, texnansi, t5               \NC sans \NC \NR
+\NC kurier                     \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC kurier-light               \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC kurier-medium              \NC type-one  \NC ec, qx, texnansi, t5               \NC sans, math \NC \NR
+\NC pagella                    \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR % removed encs: rm,el, ec, cs, l7x
+\NC palatino                   \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC termes                     \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC times                      \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC bonum                      \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC bookman                    \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC schola                     \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC schoolbook                 \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC serif\NC \NR
+\NC heros                      \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC sans\NC \NR
+\NC helvetica                  \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC sans\NC \NR
+\NC adventor                   \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC sans\NC \NR
+\NC cursor                     \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC mono\NC \NR
+\NC courier                    \NC type-gyr  \NC ec, qx, texnansi, t5, t2a/b/c      \NC mono\NC \NR
+\NC omega                      \NC type-omg  \NC -- hardcoded --                    \NC naskh, serif, mono\NC \NR
+\NC cbgreek                    \NC type-cbg  \NC -- hardcoded --                    \NC serif, sans, mono \NC \NR
+\NC cbgreek-medium             \NC type-cbg  \NC -- hardcoded --                    \NC serif, sans, mono \NC \NR
+\NC cbgreek-all                \NC type-cbg  \NC -- hardcoded --                    \NC serif, sans, mono \NC \NR
+\NC cow                        \NC type-cow  \NC -- hardcoded --                    \NC math, serif \NC \NR
+\NC sheep                      \NC type-cow  \NC -- hardcoded --                    \NC math, serif \NC \NR
+
+\stoptabulate

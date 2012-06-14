@@ -1,0 +1,119 @@
+% Translation: 2006-10-02 Vít Zýka
+% Checking:    2006-11-14 zyka
+\startcomponent ma-cb-cz-pagebackgrounds
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Page backgrounds}
+\chapter{Pozadí stránky}
+
+%\index{page areas}
+%\index{background+page areas}
+\index{plocha stránky}
+\index{pozadí+stránky}
+
+\Command{\tex{setupbackgrounds}}
+
+%The page background can also be set, with:
+Pozadí stránky mù¾e být nastaveno pomocí:
+
+\shortsetup{setupbackgrounds}
+
+%% The first two bracket pairs are used to define the page
+%% areas. The last bracket pair is used for set up.
+První dvì hranaté závorky definují èást plochy stránky, které chceme
+nastavit pozadí. Poslední závorka obsahuje jeho parametry.
+
+\doifmodeelse{bulletin}
+  {
+    \def\WColI  {1.0}
+    \def\WColII {1.5}
+    \def\WColIII{2.0}
+    \def\WColIV {2.5}
+    \def\WColV  {2.0}
+    \def\WColVI {1.5}
+  }
+  {
+    \def\WColI  {1.5}
+    \def\WColII {2.0}
+    \def\WColIII{2.5}
+    \def\WColIV {3.0}
+    \def\WColV  {2.5}
+    \def\WColVI {2.0}
+  }
+
+\startbuffer
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {}
+   \framed[width=\WColII cm,frame=off]                    {left}
+   \framed[width=\WColIII cm,frame=off]                   {left}
+   \framed[width=\WColIV cm,frame=off]                    {text}
+   \framed[width=\WColV cm,frame=off]                     {right}
+   \framed[width=\WColVI cm,frame=off]                    {right}}
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {}
+   \framed[width=\WColII cm,frame=off]                    {edge}
+   \framed[width=\WColIII cm,frame=off]                   {margin}
+   \framed[width=\WColIV cm,frame=off]                    {}
+   \framed[width=\WColV cm,frame=off]                     {margin}
+   \framed[width=\WColVI cm,frame=off]                    {edge}}
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {top}
+   \framed[width=\WColII cm]                              {}
+   \framed[width=\WColIII cm]                             {}
+   \framed[width=\WColIV cm]                              {}
+   \framed[width=\WColV cm]                               {}
+   \framed[width=\WColVI cm]                              {}}
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {header}
+   \framed[width=\WColII cm]                              {}
+   \framed[width=\WColIII cm,background=screen]           {}
+   \framed[width=\WColIV cm,background=screen]            {}
+   \framed[width=\WColV cm,background=screen]             {}
+   \framed[width=\WColVI cm]                              {}}
+\hbox
+  {\framed[width=\WColI cm,frame=off,height=3cm]          {text}
+   \framed[width=\WColII cm,height=3cm]                   {}
+   \framed[width=\WColIII cm,height=3cm,background=screen]{}
+   \framed[width=\WColIV cm,height=3cm,background=screen] {}
+   \framed[width=\WColV cm,height=3cm,background=screen]  {}
+   \framed[width=\WColVI cm,height=3cm]                   {}}
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {footer}
+   \framed[width=\WColII cm]                              {}
+   \framed[width=\WColIII cm,background=screen]           {}
+   \framed[width=\WColIV cm,background=screen]            {}
+   \framed[width=\WColV cm,background=screen]             {}
+   \framed[width=\WColVI cm]                              {}}
+\hbox
+  {\framed[width=\WColI cm,frame=off]                     {bottom}
+   \framed[width=\WColII cm]                              {}
+   \framed[width=\WColIII cm]                             {}
+   \framed[width=\WColIV cm]                              {}
+   \framed[width=\WColV cm]                               {}
+   \framed[width=\WColVI cm]                              {}}
+\stopbuffer
+
+\placefigure
+  [here]
+  [fig:pageareas]
+%  {The page areas defined in \type{\setupbackgrounds}.}
+  {Plochy stránky pou¾itelné v~\type{\setupbackgrounds}.}
+  {\start\setupcolors[state=start]\tt\getbuffer\stop}
+
+%% If you want to have backgrounds in the gray areas of the
+%% page layout of \in{figure}[fig:pageareas] you type:
+Pokud napø. chcete mít ¹edé pozadí jako na
+\in{obrázku}[fig:pageareas], napí¹eme:
+
+\startbuffer
+\setupbackgrounds
+  [header,text,footer]
+  [leftmargin,text,rightmargin]
+  [background=screen]
+\stopbuffer
+
+\typebuffer
+
+\stopcomponent

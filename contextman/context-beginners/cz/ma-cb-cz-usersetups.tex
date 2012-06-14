@@ -1,0 +1,51 @@
+% Translation: busaj
+% Checking:    2006-11-16 zyka
+\startcomponent ma-cb-cz-usersetups
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{User specifications}
+\chapter{U¾ivatelská nastavení}
+
+%\index{\tt cont-sys.tex}
+\index[cont-sys.tex]{\tt cont-sys.tex}
+\index{u¾ivatelská nastavení}
+
+%When \CONTEXT\ is run a number of predefined parameters is
+%loaded. These parameters are set up in the file
+%\type{cont-sys.tex}. Users can define their own preferences
+%(housestyle) in this file. Be aware of the fact that
+%\CONTEXT\ has to be able to find this file. The
+%\type{readme} file that goes with the distribution tells
+%some more about site specific setups. The most important
+%addition to this file probbably concerns the output:
+Bìhem provozu \CONTEXT{}u se nastavuje mno¾ství implicitních
+parametrù. Tyto parametry jsou zadefinovány v~souboru
+\type{cont-sys.tex}. U¾ivatelé mohou tento soubor vytvoøit
+pøejmenováním souboru \type{cont-sys.rme} (nejlépe ve stejném
+adresáøi, aby jej \CONTEXT{} na¹el) a~v~tomto souboru 
+definovat své vlastní preference (firemní styl).
+%Soubor \type{readme}, který je souèástí distribuce, informuje více
+%o~konkrétních nastaveních.
+Nejdùle¾itìj¹í èást tohoto souboru se pravdìpodobnì týká
+výstupu:
+
+\starttyping
+\setupoutput[pdftex]
+\stoptyping
+
+%tells \CONTEXT\ to produce \PDF\ output instead of \DVI,
+%while
+Sdìlí \CONTEXT{}u, ¾e má vytváøet výstup \PDF\ namísto \DVI,
+zatímco
+
+\starttyping
+\setupoutput[dvipsone,dviwindo]
+\stoptyping
+
+%sets things up for those programs. By default \DVIPS\ output
+%is set up.
+nastaví podmínky pro tyto programy. Pøedvolený je \DVIPS{} výstup.
+
+\stopcomponent

@@ -1,0 +1,41 @@
+======================================================================
+           URW Classico (Optima) 
+======================================================================
+                                                            2006-12-24
+                                                           Bob Tennent
+                                                     rdt(at)tennent.ca
+
+Using the URWClassico Fonts in LaTeX
+------------------------------------
+
+Add the following to the preamble of your document to make these fonts
+the default for sans serif text:
+
+  \renewcommand{\sfdefault}{uop}
+
+To make sans serif (instead of the "Roman" family) the default for      
+ordinary text, also add                                                 
+
+  \renewcommand{\rmdefault}{\sfdefault}
+
+The OT1, T1, and TS1 encodings are supported.
+
+NFSS classification:
+
+family series shape(s)       PostScript font names
+---------------------------------------------------------------------
+
+uop    m      n, sl, it, sc  URWClassico-Reg, URWClassico-Ita
+uop    b      n, sl, it, sc  URWClassico-Bol, URWClassico-BolIta
+
+License
+-------
+
+The URW Classico fonts are Copyright (c) 2000 by (URW)++ Design &
+Development. Distribution and modification of the URW Classico fonts are
+subject to the Aladdin Free Public License which is available here:
+
+  http://www.cs.wisc.edu/~ghost/doc/cvs/Public.htm
+
+This license allows modification and *non-commercial* distribution, but 
+not distribution in a commercial product.                               

@@ -1,0 +1,17 @@
+  \startFLOWcell
+    \shape{procedure}
+    \name{produkt}
+    \location{1,1}
+    \text{\translate[nl=produkt,en=product]}
+    \connect [rl] {onderdeel}
+  \stopFLOWcell
+  \startFLOWcell
+    \shape{procedure}
+    \name{omgeving-2}
+    \location{1,2}
+    \text{\translate[nl=omgeving,en=environment]}
+    \connect [tb] {produkt}
+  \stopFLOWcell
+
+  \includeFLOWchart[opzet-1][x=2,y=1]
+

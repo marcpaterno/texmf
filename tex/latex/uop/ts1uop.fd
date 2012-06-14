@@ -1,0 +1,40 @@
+%Filename: ts1uop.fd
+%Created by: tex inst-uop
+%Created using fontinst v1.929
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts1uop.fd}
+   [2006/12/24 Fontinst v1.929 font definitions for TS1/uop.]
+
+\DeclareFontFamily{TS1}{uop}{}
+
+\DeclareFontShape{TS1}{uop}{m}{n}{
+   <-> uopr8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{m}{sl}{
+   <-> uopro8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{m}{it}{
+   <-> uopri8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{b}{n}{
+   <-> uopb8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{b}{sl}{
+   <-> uopbo8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{b}{it}{
+   <-> uopbi8c
+}{}
+
+\DeclareFontShape{TS1}{uop}{bx}{n}{<->ssub * uop/b/n}{}
+\DeclareFontShape{TS1}{uop}{bx}{sl}{<->ssub * uop/b/sl}{}
+\DeclareFontShape{TS1}{uop}{bx}{it}{<->ssub * uop/b/it}{}
+
+\endinput

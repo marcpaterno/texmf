@@ -1,0 +1,3 @@
+\framed
+  [width=.2\hsize,height=3cm]
+  {\rbox to 2.5cm{\hsize2.5cm right\\of the\\middle}}

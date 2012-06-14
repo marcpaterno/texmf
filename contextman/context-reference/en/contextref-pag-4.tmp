@@ -1,0 +1,12 @@
+\unprotect
+
+\hbox
+  {\setupframed
+     [\c!width=1cm,\c!height=1.5cm,
+      \c!background=\v!screen,\c!backgroundscreen=1]%
+   \hbox{\framed{1}\framed{4}}%
+   \hskip.25cm
+   \hbox{\framed{3}\framed{2}}}
+
+\protect
+

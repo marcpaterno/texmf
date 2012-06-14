@@ -1,0 +1,150 @@
+% Translation: busaj
+% Checking: 2006-11-09 zyka
+\startcomponent ma-cb-cz-gettingstarted
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{How to process a file}
+\chapter{Jak zpracovat vstupní soubor}
+
+%\index{input file+processing}
+%\index[dvifile]{\type{dvi}--file}
+%\index[pdffile]{\type{pdf}--file}
+\index{vstupní soubor+zpracování}
+\index[dvisoubor]{\type{dvi}--soubor}
+\index[pdfsoubor]{\type{pdf}--soubor}
+
+%If you want to process a \CONTEXT\ input file, you might
+%type at the command line prompt:
+Jestli¾e chceme zpracovat vstupní soubor \CONTEXT{}u, mù¾eme na
+pøíkazové øádce napsat:
+
+%\starttyping
+%context filename
+%\stoptyping
+\starttyping
+context jmenosouboru
+\stoptyping
+
+%The availability of the batch command \type{context} depends
+%on the system you're using. Ask your system administrator
+%the command you use to start \CONTEXT. If your filename is
+%\type{myfile.tex} this can be:
+Dostupnost dávkového pøíkazu \type{context} závisí na pou¾itém systému. 
+Na to, jakým pøíkazem se spou¹tí \CONTEXT, se zeptejte správce svého systému. 
+Pokud se ná¹ soubor jmenuje \type{mujsoubor.tex}, mù¾e to být:
+
+%\starttyping
+%context myfile
+%\stoptyping
+\starttyping
+context mujsoubor
+\stoptyping
+
+%or when \TEXEXEC\ is properly installed:
+\noindent nebo, kdy¾ je øádnì nainstalován \TEXMFSTART{} a~\TEXEXEC:
+
+%\starttyping
+%texexec --pdf myfile
+%\stoptyping
+\starttyping
+texmfstart texexec --pdf mujsoubor
+\stoptyping
+
+%the extension \type{.tex} is not needed.
+\noindent Pøíponu \type{.tex} není potøeba zadávat.
+
+%After pressing \Enter\ processing will be started. \CONTEXT\
+%will show processing information on your screen. If
+%processing is succesful the command line prompt will return
+%and \CONTEXT\ will produce a \type{dvi} or \type{pdf} file.
+Po stlaèení klávesy \Enter\ zaène zpracovávání. \CONTEXT\
+vypisuje na obrazovku informace o~prùbìhu zpracování. 
+Kdy¾ je soubor zpracován úspì¹nì, znovu se objeví výzva v~pøíkazové
+øádce a \CONTEXT\ vytvoøí soubor \type{dvi} nebo \type{pdf}.
+
+%If processing is not succesful ---for example because you
+%typed \type{\stptext} instead of \type{\stoptext}---
+%\CONTEXT\ produces a \type{ ? } on your terminal and tells
+%you it has just processed an error. It will give you some
+%basic information on the type of error and the line number
+%where the error becomes effective.
+Jestli¾e zpracování úspì¹né není -- napøíklad proto, ¾e jsme napsali
+\type{\stptext} namísto \type{\stoptext} ---
+\CONTEXT\ na obrazovku vypí¹e znak \type{ ? } a~oznámí nám, ¾e
+právì narazil na chybu. Poskytne nám základní informace
+o~druhu chyby a~èíslo øádky, na kterém se chyba projevila.
+
+%At the instant of \type{ ? } you can type:
+V~okam¾iku, kdy se objeví znak \type{ ? } mù¾eme napsat:
+
+%\starttabulate[|||]
+%\NC \type{H} \NC for help information on your error \NC\NR
+%\NC \type{I} \NC for inserting the correct \CONTEXT\ command \NC\NR
+%\NC \type{Q} \NC for quiting and entering batch mode \NC\NR
+%\NC \type{X} \NC for exiting the running mode \NC\NR
+%\NC \Enter   \NC for ignoring the error \NC\NR
+%\stoptabulate
+\starttabulate[|||]
+\NC \type{H} \NC pro nápovìdu k~chybì, \NC\NR
+\NC \type{I} \NC pro vlo¾ení opraveného pøíkazu \CONTEXT{}u, \NC\NR
+\NC \type{Q} \NC pro ignorování chyb bez výpisu, \NC\NR
+\NC \type{R} \NC pro ignorování chyb s~výpisem, \NC\NR
+\NC \type{X} \NC pro ukonèení bìhu, nebo \NC\NR
+\NC \Enter   \NC pro ignorování chyby. \NC\NR
+\stoptabulate
+
+%Most of the time you will type \Enter\ and processing will
+%continue. Then you can edit the input file and fix the error.
+Nejèastìji stlaèíme klávesu \Enter\ a~zpracování bude pokraèovat. 
+Pak mù¾eme editovat vstupní soubor a~chybu odstranit.
+
+%Some errors will produce a~\type{ * } on your screen and
+%processing will stop. This error is due to a fatal error in
+%your input file. You can't ignore this error and the only
+%option you have is to type \type{\stop} or {\sc Ctrl}~Z. The
+%program will be halted and you can fix the error.
+Nìkteré chyby zpùsobí, ¾e se na obrazovku vypí¹e znak \type{ * }
+a souèasnì se zpracování zastaví. To je dùsledek záva¾né chyby ve
+vstupním souboru. Tuto chybu nemù¾eme ignorovat a~jedinou 
+mo¾ností je napsat \type{\stop} nebo {\sc Ctrl}~Z. Program se ukonèí
+a~my mù¾eme chybu odstranit.
+
+%During the processing of your input file \CONTEXT\ will also
+%inform you of what it is doing with your document. For
+%example it will show page numbers and information about
+%process steps. Further more it gives warnings. These are of
+%a typographical order and tells you when line breaking is not
+%successful. All information on processing is stored in a
+%\type{log} file that can be used for reviewing warnings and
+%errors and the respective line numbers where they occur in
+%your file.
+Bìhem zpracování vstupního souboru nás \CONTEXT\ 
+také informuje o~èinnostech, které na~na¹em dokumentu provádí. 
+Zobrazuje napøíklad èísla stránek a~informace o~jednotlivých
+krocích. Mimoto vypisuje varování. Ta se týkají typografie  
+a~oznamují nám neúspì¹né zalomení øádku. 
+Ve¹keré informace o~zpracování se ukládají do záznamového
+souboru s~pøíponou \type{.log}, kde lze pøezkoumat varování
+i~chyby a~nalézt èísla pøíslu¹ných øádek vstupního souboru.
+
+%When processing is succesful \CONTEXT\ produces a new file,
+%with the extension \type{.dvi} or \type{.pdf} so the files
+%\type{myfile.dvi} or \type{myfile.pdf} are generated. The
+%abbreviation \type{dvi} stands for Device Indepent. This
+%means that the file can be processed by a suitable
+%PostScript (\PS) printer driver to make the file suitable
+%for printing or viewing. The abbreviation \PDF\ stands for
+%Portable Document Format. This is a platform independent
+%format for printing and viewing.
+Pøi úspì¹ném zpracování \CONTEXT\ vytvoøí nový soubor s~pøíponou 
+\type{.dvi} nebo \type{.pdf}, v~na¹em pøíkladu bude tedy vytvoøen soubor
+\type{mujsoubor.dvi} nebo \type{mujsoubor.pdf}. Zkratka 
+\type{dvi} znamená Device Indepent (nezávislý na zaøízení). 
+To znamená, ¾e soubor mù¾e být dále pøeveden patøièným ovladaèem
+PostScriptové (\PS) tiskárny na soubor vhodný k~tisku nebo k~prohlí¾ení. 
+Zkratka \PDF\ znamená Portable Document Format (pøenosný formát dokumentu). 
+Je to formát pro tisk a prohlí¾ení, nezávislý na operaèním systému.
+
+\stopcomponent

@@ -1,0 +1,4 @@
+\definetypeface [funny] [rm] [serif] [palatino] [default] [encoding=texnansi]
+\definetypeface [funny] [ss] [sans]  [palatino] [default] [encoding=texnansi]
+\definetypeface [funny] [tt] [mono]  [palatino] [default] [encoding=texnansi]
+\definetypeface [funny] [mm] [math]  [palatino] [default] [encoding=texnansi]

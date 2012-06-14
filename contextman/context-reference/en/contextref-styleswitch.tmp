@@ -1,0 +1,11 @@
+\vskip 1ex
+\starttabulate[|l|l|]
+%\NC \bf style  \NC \bf Long names and aliases    \NC\NR
+\NC \type{\rm} \NC serif, regular, roman, rm     \NC\NR
+\NC \type{\ss} \NC sans, support, sansserif, ss  \NC\NR
+\NC \type{\tt} \NC mono, type, teletype, tt      \NC\NR
+\NC \type{\hw} \NC handwritten, hw               \NC\NR
+\NC \type{\cg} \NC calligraphic, cg              \NC\NR
+\NC --         \NC mm                            \NC\NR
+\stoptabulate
+\vskip 1ex

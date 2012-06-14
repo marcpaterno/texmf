@@ -1,0 +1,3 @@
+\setupinmargin[1][align=right, line=1,style=slanted]
+\setupinmargin[2][align=middle,line=2,style=boldslanted]
+\setupinmargin[3][align=left,  line=3,style=bold]

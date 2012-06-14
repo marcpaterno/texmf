@@ -1,0 +1,126 @@
+%======================================================================
+%
+%  hypertxt - interface to hyperref package
+%
+%======================================================================
+%
+% \usepackage[options]{hypertxt}
+% \hypertxtsetup{moreoptions}
+% where options and moreoptions consists of any valid hyperref options
+%
+% \mailto[text]{emailaddress}
+% where text defaults to emailaddress
+%
+%======================================================================
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Preliminary package definitions:
+
+\def\filename{hypertxt}
+\def\filedesc{interface to hyperref package}
+\def\filedate{2004/03/06}
+\def\fileauth{W. E. Brown<wb at fnal dot gov>}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Package identification:
+
+\NeedsTeXFormat{LaTeX2e}%	prerequisite version of LaTeX
+  [1995/12/01]
+
+\ProvidesPackage{\filename}%	self-identification
+  [\filedate\space\filedesc\space(\fileauth)]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Option-processing:
+
+\DeclareOption*%
+  {%
+    \PassOptionsToPackage%
+      {\CurrentOption}%
+      {hyperref}%
+  }
+
+\ProcessOptions
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Provide hyperref, configured with our preferred defaults:
+
+\@ifpackageloaded{hyperref}%
+  {%
+    \PackageError{\filename}%
+      {%
+        package `hyperref' has already been loaded%
+      }%
+      {%
+        you should let me load hyperref;\MessageBreak%
+	then configure it as you like via `\hypertxtsetup{...}'%
+      }%
+  }%
+  {}
+
+\ifx\pdfoutput\undefined%	we're not running pdftex
+\else%
+  \PassOptionsToPackage%	specify hyperref pdf options
+    { pdfpagelabels%
+    , pdfpagelayout	= SinglePage%
+    , pdfpagemode	= None%
+    , pdfstartview	= FitV%
+    , pdftex%
+    }%
+    {hyperref}%
+\fi
+
+\RequirePackage%
+  [ anchorcolor		= black%
+  , backref		= false%
+  , bookmarks		= true%
+  , bookmarksnumbered	= true%
+  , bookmarksopen	= false%
+  , bookmarksopenlevel	= 1%
+  , breaklinks		= true%
+  , citecolor		= blue%
+  , colorlinks		= true%
+  , draft		= false%
+  , filecolor		= blue%
+  , linkcolor		= blue%
+  , linktocpage		= true%
+  , menucolor		= blue%
+  , plainpages		= false%
+  , urlcolor		= blue%
+  ]%
+  {hyperref}
+\@ifpackageloaded{memoir}%	ensure hyperref/memoir compatability
+  {%
+    \RequirePackage{memhfixc}%
+  }%
+  {}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Provide user configuration to hyperref:
+
+\newcommand{\hypertxtsetup}[1]%
+  {%
+    \hypersetup{#1}%
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Provide user command mailto{}{}:
+
+\RequirePackage{ifthen}
+
+\newcommand{\mailto}[2][]%
+  {%
+    \ifthenelse{\equal{#1}{}}%
+      {\href{#2}{#2}}%
+      {\href{#2}{#1}}%
+  }
+
+
+%======================================================================
+\endinput

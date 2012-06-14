@@ -1,0 +1,137 @@
+% Translation: 2006-10-26 zyka 
+% Checking:    2006-11-13 zyka
+\startcomponent ma-cb-cz-columns
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Columns}
+\chapter{Sloupce}
+
+%\index{columns}
+\index{sloupce}
+
+\Command{\tex{startcolums}}
+\Command{\tex{setupcolumns}}
+\Command{\tex{column}}
+
+%% Simple documents can be typeset in columns. If you
+%% preceed a text fragment by \type{\startcolumns} and close
+%% the text fragment by \type{\stopcolumns} everything in
+%% between will be set in columns.
+Nepøíli¹ slo¾ité dokumenty je mo¾né sázet do sloupcù. Jestli¾e kus
+textu zahájíme pøíkazem \type{\startcolumns} a ukonèíme
+\type{\stopcolumns}, ve¹kerý takto obklopený materiál bude formátován
+do sloupcù.%
+\footnote{Slo¾itìj¹í dokument, napø. s~plovoucími obrázky, je lépe
+  sázet pomocí \type{\startcolumnsets} \dots\
+  \type{\stopcolumnsets}. Popis lze najít v~manuálu
+  \from[manual:columns], viz \in{pøílohu}[sec:info]. Pozn. pøekl.}
+
+\shortsetup{startcolumns}
+
+%% \startbuffer
+%% \startcolumns[n=3,tolerance=verytolerant]
+%% Hasselt is an old Hanseatic City, situated 12~km north of Zwolle at
+%% the river Zwartewater.
+
+%% The city has a long history since obtaining the city charter around
+%% 1252. Part and parcel of this history can be traced back to a large
+%% number of monuments to be admired in the city center.
+
+%% There you will find the St. Stephanus church, a late gothic church
+%% dating back to 1479 with a magnificent organ. The former Municipal
+%% Building is situated on The Market Place. Constituted between 1500
+%% and 1550 it houses a large collection of weapons, amongst which one
+%% of the largest collection of black powder guns (haakhussen) in the
+%% whole world should be mentioned.
+
+%% Furthermore there is a corn windmill `The Swallow', dating back to
+%% 1748 as well as the `Stenendijk', a unique embankment and the last
+%% shell limekiln in Europe still in full operation.
+
+%% The city center with the townmoat adorned by lime-trees, the Van
+%% Stolkspark and the hustle and bustle at the docks are ideally suited
+%% for a stroll.
+
+%% The area around Hasselt is also worth mentioning. In wintertime
+%% polder Mastenbroek harbours large numbers of geese. In summertime the
+%% hamlets Genne, Streukel and Celle\-mui\-den form, together with the very
+%% rare lapwing flowers (Lat. Fritillaria meleagris) found on the banks
+%% of the river Zwatewater, the ideal surroundings for walking or
+%% cycling trips.
+
+%% Hasselt also is a very important center for watersports. The lakes of
+%% northwest Overijssel, the river IJssel, the Overijsselse Vecht and
+%% the Randmeren are within easy reach from the yacht harbour `De
+%% Molenwaard'. Sailing, fishing, swimming and canoeing can be fully
+%% enjoyed in Hasselt.
+
+%% Furthermore some events of special interest should be
+%% mentioned. Every year at the end of August Hasselt celebrates the
+%% `Eui Festival' (hay festival).
+%% \stopcolumns
+%% \stopbuffer
+\startbuffer
+\startcolumns[n=3,tolerance=verytolerant]
+Hasselt je staré hanzovní mìsto, polo¾ené 12\,km severnì od Zwolle na
+øece Zwartewater.
+
+Má bohatou historii, která se zaèíná kolem roku 1252, kdy Hasselt obdr¾el
+mìstská práva. Tuto historii mù¾eme rozkrývat pomocí velkého poètu
+památek v~centru mìsta.
+
+Nalezneme zde pozdnìgotický kostel Sv. ©tìpána zalo¾ený roku 1479
+s~velkolepými varhanami. Budova bývalé radnice, která se nalézá na
+Tr¾ním námìstí, byla postavena mezi roky 1500 a~1550 a dnes v~nìm
+sídlí muzeum zbraní. Za zmínku stojí zejména sbírka dìl na èerný støelný
+prach (haakhussen), která se øadí k nejvìt¹ím na svìtì.
+
+Dále je zde vìtrný mlýn \quote{De Zwaluw} (Vla¹tovka) na mletí mouky z~roku
+1748, unikátní nábøe¾í \quote{Stenendijk} a~v~Evropì poslední stará plnì
+funkèní vápenka.
+
+Centrum mìsta s~kanály lemovanými lípami, oblast Van
+Stolkspark a dok plný ruchu a~hem¾ení jsou ideální místa k~procházkám.
+
+Okolí Hasseltu stojí ov¹em té¾ za zmínku. V~zimì hostí polder
+Mastenbroek velká stáda ovcí. V~létì tvoøí vesnièky Genne, Streukel
+a Celle\-mui\-den s~velice vzácnou kvìtinou øebèíkem kostkovaným
+(lat. Fritillaria meleagris) výborné prostøedí pro pì¹í i~cyklistické
+výlety.
+
+Hasselt je také velice dùle¾ité mìsto vodních sportù. Jezera
+severozápadnì od Overijssel, øeky IJssel, Overijsselse Vecht a
+Randmeren jsou snadno dosa¾itelné z~pøístavu jachet \quote{De
+Molenwaard}. Moøeplavbu, rybolov, plavání a jízdu na kanoi
+si v~Hasseltu mù¾ete vychutnat naplno.
+
+A~na závìr uvedeme jednu událost obzvlá¹tního významu. Ka¾doroènì
+se na konci srpna v~Hasseltu slaví do¾ínky -- \quote{Eui
+Festival}. 
+\stopcolumns
+\stopbuffer
+
+\typebuffer
+
+% The result will be a three column text.
+Výsledkem bude tøísloupcový text.
+
+{\switchtobodyfont[9pt]\getbuffer}
+
+% If possible a new column can be enforced with \type{\column}.
+% You can set up columns with:
+Je-li to potøeba, pak pøechod do nového sloupce mù¾e být vynucen pomocí
+\type{\column}. Sloupce nastavíme pøíkazem
+
+\shortsetup{setupcolumns}
+
+\index{øádkový rejstøík}
+% In most cases you will obtain a better result by type
+% setting the text on \quote{grid}. This is done by typing
+% \type{grid=yes} in the command \type{\setuplayout}.
+Ve vìt¹inì pøípadù dosáhneme pøi sazbì do sloupcù lep¹ích výsledkù,
+zapneme-li sazbu do {\em øádkového rejstøíku}. To se nastavuje parametrem
+\type{grid=yes} v~pøíkazu \type{\setuplayout}.
+
+\stopcomponent

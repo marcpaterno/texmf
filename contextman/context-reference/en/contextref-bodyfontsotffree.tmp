@@ -1,0 +1,52 @@
+\startsimplecolumns
+\switchtobodyfont[9pt]
+\starttabulate[|l|l|p|]
+\NC \bf Identifier             \NC \bf file \NC \bf Supported styles \NC \FR
+\NC modern                     \NC type-otf \NC serif, sans, mono, math, boldmath, bfmath \NC \NR
+\NC latin-modern               \NC type-otf \NC serif, sans, mono, math, boldmath, bfmath \NC \NR
+\NC modern-vari                \NC type-otf \NC mono \NC \NR
+\NC latin-modern-vari          \NC type-otf \NC mono \NC \NR
+\NC modern-cond                \NC type-otf \NC mono \NC \NR
+\NC latin-modern-cond          \NC type-otf \NC mono \NC \NR
+\NC computer-modern            \NC type-otf \NC serif, sans, mono, math, boldmath, bfmath \NC \NR
+\NC concrete                   \NC type-otf \NC serif \NC \NR
+\NC euler                      \NC type-otf \NC math, boldmath, bfmath\NC \NR
+\NC ams                        \NC type-otf \NC math \NC \NR
+\NC pagella                    \NC type-otf \NC serif \NC \NR
+\NC termes                     \NC type-otf \NC serif \NC \NR
+\NC bonum                      \NC type-otf \NC serif \NC \NR
+\NC schola                     \NC type-otf \NC serif \NC \NR
+\NC chorus                     \NC type-otf \NC serif \NC \NR
+\NC heros                      \NC type-otf \NC sans \NC \NR
+\NC adventor                   \NC type-otf \NC sans \NC \NR
+\NC \rlap{cursor}\hphantom{antykwa-torunska-lightcond}\NC type-otf \NC sans \NC \NR
+\stoptabulate
+\starttabulate[|l|l|p|]
+\NC \bf Identifier             \NC \bf file \NC \bf Supported styles \NC \FR
+\NC palatino                   \NC type-otf \NC serif, math \NC \NR
+\NC times                      \NC type-otf \NC serif, math \NC \NR
+\NC bookman                    \NC type-otf \NC serif \NC \NR
+\NC schoolbook                 \NC type-otf \NC serif \NC \NR
+\NC chancery                   \NC type-otf \NC calligraphy \NC \NR
+\NC helvetica                  \NC type-otf \NC sans \NC \NR
+\NC courier                    \NC type-otf \NC mono \NC \NR
+\NC antykwa-torunska           \NC type-otf \NC serif, math \NC \NR
+\NC antykwa-torunska-light     \NC type-otf \NC serif, math \NC \NR
+\NC antykwa-torunska-cond      \NC type-otf \NC serif, math \NC \NR
+\NC antykwa-torunska-lightcond \NC type-otf \NC serif, math \NC \NR
+\NC antykwa-poltawskiego       \NC type-otf \NC serif \NC \NR
+\NC iwona-light                \NC type-otf \NC sans, math \NC \NR
+\NC iwona                      \NC type-otf \NC sans, math \NC \NR
+\NC iwona-medium               \NC type-otf \NC sans, math \NC \NR
+\NC iwona-heavy                \NC type-otf \NC sans, math \NC \NR
+\NC iwona-cond                 \NC type-otf \NC sans \NC \NR
+\NC iwona-light-cond           \NC type-otf \NC sans \NC \NR
+\NC iwona-medium-cond          \NC type-otf \NC sans \NC \NR
+\NC iwona-heavy-cond           \NC type-otf \NC sans \NC \NR
+\NC kurier                     \NC type-otf \NC sans, math \NC \NR
+\NC kurier-light               \NC type-otf \NC sans, math \NC \NR
+\NC kurier-medium              \NC type-otf \NC sans, math \NC \NR
+\NC charter                    \NC type-otf \NC serif \NC \NR
+\NC gentium                    \NC type-xtx \NC serif \NC \NR
+\stoptabulate
+\stopsimplecolumns

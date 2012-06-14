@@ -1,0 +1,40 @@
+\startsimplecolumns
+\switchtobodyfont[9pt]
+\starttabulate[|l|l|l|]
+\NC \bf Identifier                 \NC \bf file \NC \bf Supported styles \NC \FR
+\NC zapfino                        \NC type-hgz \NC serif, handwriting\NC \NR
+\NC optima-nova                    \NC type-hgz \NC sans\NC \NR
+\NC optima-nova-os                 \NC type-hgz \NC sans\NC \NR
+\NC optima-nova-light              \NC type-hgz \NC sans\NC \NR
+\NC optima-nova-medium             \NC type-hgz \NC sans\NC \NR
+\NC palatino-nova                  \NC type-hgz \NC serif\NC \NR
+\NC palatino-nova-os               \NC type-hgz \NC serif\NC \NR
+\NC palatino-nova-light            \NC type-hgz \NC serif\NC \NR
+\NC palatino-nova-medium           \NC type-hgz \NC serif\NC \NR
+\NC palatino-sans                  \NC type-hgz \NC sans\NC \NR
+\NC palatino-informal              \NC type-hgz \NC sans\NC \NR
+\NC melior                         \NC type-hgz \NC serif\NC \NR
+\NC -- all four-variant fonts --   \NC type-xtx \NC Xserif \NC \NR
+\NC -- all four-variant fonts --   \NC type-xtx \NC Xsans \NC \NR
+\NC -- all four-variant fonts --   \NC type-xtx \NC Xmono \NC \NR
+\stoptabulate
+\starttabulate[|l|l|l|]
+\NC \bf Identifier                 \NC \bf file \NC \bf Supported styles \NC \FR
+\NC \rlap{times}\hphantom{-- all four-variant fonts --}\NC type-xtx \NC serif \NC \NR
+\NC palatino                       \NC type-xtx \NC serif \NC \NR
+\NC helvetica                      \NC type-xtx \NC sans \NC \NR
+\NC courier                        \NC type-xtx \NC mono \NC \NR
+\NC hoefler                        \NC type-xtx \NC serif \NC \NR
+\NC lucidagrande                   \NC type-xtx \NC sans \NC \NR
+\NC optima                         \NC type-xtx \NC sans \NC \NR
+\NC gillsans                       \NC type-xtx \NC sans \NC \NR
+\NC gillsanslt                     \NC type-xtx \NC sans \NC \NR
+\NC zapfino                        \NC type-xtx \NC handwriting, serif \NC \NR
+\NC applechancery                  \NC type-xtx \NC calligraphy, serif \NC \NR
+\NC timesnewroman                  \NC type-xtx \NC serif \NC \NR
+\NC arial                          \NC type-xtx \NC sans \NC \NR
+\NC lucida                         \NC type-xtx \NC serif, sans, mono,\NC \NR
+\NC                                \NC          \NC handwriting, fax, \NC \NR
+\NC                                \NC          \NC calligraphy       \NC \NR
+\stoptabulate
+\stopsimplecolumns

@@ -1,0 +1,40 @@
+\unprotect
+
+\switchtobodyfont[\v!small]
+
+\def\somepage#1#2#3%
+  {\bgroup
+   \doif{#2#3}{}{\setupframed[\c!background=\v!screen]}%
+   \framed[\c!height=6em]%
+     {\vbox to 5em
+        {\hbox to #1{#2\hss#3}%
+         \vss
+         \hbox to #1{#2\hss#3}}}%
+   \egroup}%
+
+\startcombination[3*1]
+  {\hbox
+     {\somepage{1em}{}{}%
+      \somepage{4em}{l}{r}%
+      \hskip.5em%
+      \somepage{1em}{}{}%
+      \somepage{4em}{l}{r}}}
+  {\tttf\translate[en=singlesided,nl=enkelzijdig]}
+  {\hbox
+     {\somepage{1em}{}{}%
+      \somepage{4em}{l}{r}%
+      \hskip.5em%
+      \somepage{1em}{}{}%
+      \somepage{4em}{r}{l}}}
+  {\tttf\translate[en={single...,double...},nl={enkel...,dubbel...}]}
+  {\hbox
+     {\somepage{4em}{l}{r}%
+      \somepage{1em}{}{}%
+      \hskip.5em%
+      \somepage{1em}{}{}%
+      \somepage{4em}{r}{l}}}
+  {\tttf\translate[en=doublesided,nl=doublesided]}
+\stopcombination
+
+\protect
+

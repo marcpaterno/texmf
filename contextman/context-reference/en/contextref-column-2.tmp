@@ -1,0 +1,8 @@
+\startcolumns
+\TEX\ is not an easy to learn typesetting system or program.
+The problem is that \quotation {knowing everything is possible}
+leads to \quotation {wanting everything that is possible}.
+However using \CONTEXT\ or \TEX\ takes considerable learning
+time. And it is not feasible to explain every single detail
+in this manual. Therefore \quotation {doing} is the answer.
+\stopcolumns

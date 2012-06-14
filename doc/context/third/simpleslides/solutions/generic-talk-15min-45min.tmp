@@ -1,0 +1,11 @@
+% generic-talk-15min-45min.top
+\unprotect
+\setupsystem[\c!n=1,\c!m=1]
+\def\MPOSTformatswitch{-progname=metafun -mem=}
+\setupsystem[\c!method=2]
+\setupsystem[\c!type=macosx]
+\setupoutput[pdftex]
+\setupsystem[\c!random=652]
+\setupsystem[inputfile=generic-talk-15min-45min.tex]
+\protect
+\endinput

@@ -1,0 +1,116 @@
+%======================================================================
+%
+%  talklistings - provide for listings and inline snippets of C++ code
+%  in a presentation.
+%
+%======================================================================
+%
+% To produce an inline code snippet:
+%   \cppcode[option]{code}
+% Uses \cppfgcolor and style=cppstyle
+%
+% To produce a listing of code:
+%   \begin{cpplisting}[option]
+%   ...
+%   \end{cpplisting}
+% Uses \cppfgcolor, \cppbgcolor, style=cpplistingstyle, and style=cppstyle
+%
+%======================================================================
+
+
+%----------------------------------------------------------------------
+% Package identification:
+
+\def\filedesc{C++ listings for talks}
+\def\filedate{2004/09/02}
+\def\fileauth{Marc Paterno<paterno at fnal dot gov>}
+
+
+%----------------------------------------------------------------------
+% Package boilerplate:
+
+\NeedsTeXFormat{LaTeX2e}%
+  [1995/12/01]
+
+\ProvidesPackage{talklistings}
+  [\filedate\space\filedesc\space(\fileauth)]
+
+% Exit if the style file is already loaded
+\ifx \talklistingsloaded\relax \endinput\else\let\talklistingsloaded\relax\fi
+
+
+%----------------------------------------------------------------------
+% Prerequisite packages and initial configuration:
+
+\RequirePackage{color}
+\RequirePackage{colornames}
+
+\RequirePackage{listings}
+\lstloadlanguages{[ISO]C++}
+
+
+%----------------------------------------------------------------------
+% Color customization:
+
+\newcommand{\cppbgcolor}%  applies to listings only
+  {\color[gray]{.9}}
+
+\newcommand{\cppfgcolor}%  applies to listings only
+  {}
+
+\newcommand{\cppfgcolorinline} % applies to inline code -- does nothing!
+  {}
+
+%----------------------------------------------------------------------
+% Styles:
+
+\lstdefinestyle{cpplistingstyle}%   applies to listings only
+  { backgroundcolor    = \cppbgcolor
+  , breaklines      = false
+  , emptylines      = 1
+  , escapeinside    = {(*@}{@*)}
+  , frame       = single
+  , framerule           = 1.5pt
+  , framexleftmargin    = 0pt
+  , numberblanklines    = false
+  , numbers     = none
+  , tabsize     = 2
+  , xleftmargin     = 0pt
+  , xrightmargin        = 0pt
+  , resetmargins        = true
+  }
+
+\lstdefinestyle{cppstyle}%  applies to listings and inline snippets
+  { basicstyle      = \ttfamily\cppfgcolor
+  , commentstyle    = \itshape\cppfgcolor
+  , identifierstyle = \cppfgcolor
+  , keywordstyle    = %\bfseries\cppfgcolor
+  , stringstyle     = \cppfgcolor
+  }
+
+
+%----------------------------------------------------------------------
+% Language definition:
+
+\lstdefinelanguage{isocpp}
+  [ISO]{C++}
+  { style = cppstyle }
+
+
+%----------------------------------------------------------------------
+% C++ code display:
+
+\newcommand{\cppcode}[2][]% inline snippets
+  {\lstinline[language=isocpp,#1]{#2}}
+
+\lstnewenvironment{cpplisting}[1][]%    listings
+  { \lstset
+      { language    = isocpp
+      , style       = cpplistingstyle
+      , #1
+  }   }
+  {}
+
+
+%======================================================================
+\endinput

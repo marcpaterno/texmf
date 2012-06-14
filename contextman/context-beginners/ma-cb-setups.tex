@@ -1,0 +1,65 @@
+\startenvironment ma-cb-setups
+
+% All \CONTEXT\ commands are described in \type{setupb.tex}
+% and the typesetting of this file is taken care of in
+% \type{setupa.tex}.
+%
+% These files make both \type{<} and \type{>} active and
+% therefore it's kind of tricky to load modules that use
+% \type{\ifnum} and \type{\ifdim} afterwards. Nevertheless,
+% we load the whole bunch now!
+
+% \doiffileelse{t-setup.tex}
+%   {\message{Using t-setup}
+%   % \usemodule[setup]}      % third party t-setup.tex
+%     \input t-setup.tex
+%   {\message{Using set-11}
+%     \usemodule[set-11]}
+
+% Since t-setup is present, there is no need to explicity check for it.
+\environment t-setup
+
+\pushmacro\checkdefined
+\def\checkdefined#1#2#3{}  % do not check macro redefinition (warnings
+\loadsetups                % slow down processing dramaticaly)
+\popmacro\checkdefined
+
+% Extra (missing/corrected) setup definitions
+\startXMLmapping[zero]
+  \processXMLfilegrouped{../cont-en-extra.xml}
+\stopXMLmapping
+
+%% VZ 2006-12-06 for better index breaking
+\startXMLmapping[zero]
+%  \startmode[bulletin]
+    \startXMLdata
+      <cd:command name="setupheada">
+        <cd:sequence>
+          <cd:string value="setupheada"/>
+        </cd:sequence>
+      </cd:command>
+    \stopXMLdata
+%  \stopmode
+\stopXMLmapping
+
+\secretsetup{setupheada}
+
+% ---
+\unprotect
+
+\setupsetup
+  [\c!criterium=\v!used]
+
+\setupframedtexts
+  [setuptext]
+  [\c!background=SetupAchtergrond,
+   \c!offset=15pt,
+   \c!frame=\v!off]
+
+% only for text amount evaluation
+%\def\shortsetup#1{}
+%\def\setup#1{}
+
+\protect
+
+\stopenvironment

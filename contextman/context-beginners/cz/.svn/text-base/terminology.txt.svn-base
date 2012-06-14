@@ -1,0 +1,25 @@
+Translation "ConteXt on excursion", terminology, vocabulary
+-----------------------------------------------------------
+
+back matter			= z-Aáv-Bìreèn-Aá -Bè-Aást-B
+body matter			= hlavn-Aí -Bè-Aást-B
+front matter			= -Aúvodní -Bè-Aást-B
+layout				= formátovaní
+logical name			= referenèn-Aí jm-Béno, návì¹tí
+local footnotes			= lok-Aální poznámky-B
+setup				= nastavení
+itemize                         = odr-Aá-B¾ky
+columns in itemize              = odr-Aá-B¾ky ve sloupc-Aích-B
+units				= jednotky
+siunit				= jednotka SI
+set up area			= deklaraèn-Aí oblast-B
+special character		= zvl-Aá-B¹tn-Aí znak-B
+double sided document		= oboustrann-Aý dokument-B
+chapter, section, subsection    = kapitola, sekce, podsekce
+utility                         = nástroj, utilita
+math mode                       = matematický mód (Ol¹ák TBN)
+display mode                    = display matematický mód (Ol¹ák TBN)
+text mode                       = vnitøní matematický mód  (Ol¹ák TBN)
+formulae                        = rovnice
+setup commands                  = nastavovací pøíkazy (?)
+log file                        = záznamový soubor (o bìhu)

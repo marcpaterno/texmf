@@ -1,0 +1,31 @@
+\unprotect
+
+\startcombination[3*4]
+  {\showprint[\v!landscape][][\c!location=\v!middle]}
+     {\tttf\v!landscape}
+  {\showprint[][\v!landscape][\c!location=\v!middle]}
+     {\tttf\strut\break\v!landscape}
+  {\showprint[\v!landscape][\v!landscape][\c!location=\v!middle]}
+     {\tttf\v!landscape\break\v!landscape}
+  {\showprint[90][][\c!location=\v!middle]}
+     {\tttf90}
+  {\showprint[][90][\c!location=\v!middle]}
+     {\tttf\strut\break90}
+  {\showprint[90][90][\c!location=\v!middle]}
+     {\tttf90\break90}
+  {\showprint[180][][\c!location=\v!middle]}
+     {\tttf180}
+  {\showprint[][180][\c!location=\v!middle]}
+     {\tttf\strut\break180}
+  {\showprint[180][180][\c!location=\v!middle]}
+     {\tttf180\break180}
+  {\showprint[\v!mirrored][][\c!location=\v!middle]}
+     {\tttf\v!mirrored}
+  {\showprint[][\v!mirrored][\c!location=\v!middle]}
+     {\tttf\strut\break\v!mirrored}
+  {\showprint[\v!mirrored][\v!mirrored][\c!location=\v!middle]}
+     {\tttf\v!mirrored\break\v!mirrored}
+\stopcombination
+
+\protect
+

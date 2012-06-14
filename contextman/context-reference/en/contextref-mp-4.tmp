@@ -1,0 +1,7 @@
+\startreusableMPgraphic{test b}
+  fill unitsquare xscaled \overlaywidth yscaled \overlayheight ;
+\stopreusableMPgraphic
+
+\defineoverlay[A Nice Rectangle][\reuseMPgraphic{test b}]
+
+\setupbackgrounds[page][background=A Nice Rectangle]

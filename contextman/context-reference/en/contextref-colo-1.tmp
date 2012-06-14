@@ -1,0 +1,25 @@
+\setupblackrules[width=.25\hsize,height=2ex,depth=0cm]
+\setupcombinations[inbetween=]
+\startcombination[3*7]
+  {\color[red]           {\blackrule}} {\translate[en=red,          nl=rood]}
+  {\color[green]         {\blackrule}} {\translate[en=green,        nl=groen]}
+  {\color[blue]          {\blackrule}} {\translate[en=blue,         nl=blauw]}
+  {\color[middlered]     {\blackrule}} {\translate[en=middlered,    nl=middenrood]}
+  {\color[middlegreen]   {\blackrule}} {\translate[en=middlegreen,  nl=middengroen]}
+  {\color[middleblue]    {\blackrule}} {\translate[en=middleblue,   nl=middenblauw]}
+  {\color[darkred]       {\blackrule}} {\translate[en=darkred,      nl=donkerrood]}
+  {\color[darkgreen]     {\blackrule}} {\translate[en=darkgreen,    nl=donkergroen]}
+  {\color[darkblue]      {\blackrule}} {\translate[en=darkblue,     nl=donkerblauw]}
+  {\color[yellow]        {\blackrule}} {\translate[en=yellow,       nl=geel]}
+  {\color[magenta]       {\blackrule}} {\translate[en=magenta,      nl=magenta]}
+  {\color[cyan]          {\blackrule}} {\translate[en=cyan,         nl=cyaan]}
+  {\color[middleyellow]  {\blackrule}} {\translate[en=middleyellow, nl=middelgeel]}
+  {\color[middlemagenta] {\blackrule}} {\translate[en=middlemagenta,nl=middelmagenta]}
+  {\color[middlecyan]    {\blackrule}} {\translate[en=middlecyan,   nl=middelcyaan]}
+  {\color[darkyellow]    {\blackrule}} {\translate[en=darkyellow,   nl=donkergeel]}
+  {\color[darkmagenta]   {\blackrule}} {\translate[en=darkmagenta,  nl=donkermagenta]}
+  {\color[darkcyan]      {\blackrule}} {\translate[en=darkcyan,     nl=donkercyaan]}
+  {\color[lightgray]     {\blackrule}} {\translate[en=lightgray,    nl=lichtgrijs]}
+  {\color[darkgray]      {\blackrule}} {\translate[en=darkergray,   nl=donkergrijs]}
+  {\color[black]         {\blackrule}} {\translate[en=black,        nl=zwart]}
+\stopcombination

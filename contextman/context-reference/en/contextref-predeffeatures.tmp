@@ -1,0 +1,7 @@
+\vskip 1ex
+\starttabulate[|lT|lT|]
+\NC  default  \NC liga=yes,kern=yes,tlig=yes,trep=yes          \NC \NR
+\NC smallcaps \NC liga=yes,kern=yes,tlig=yes,trep=yes,smcp=yes \NC \NR
+\NC oldstyle  \NC liga=yes,kern=yes,tlig=yes,trep=yes,onum=yes \NC \NR
+\stoptabulate
+\vskip 1ex

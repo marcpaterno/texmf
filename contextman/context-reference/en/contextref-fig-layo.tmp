@@ -1,0 +1,51 @@
+\unprotect
+
+\setuplinewidth[\v!small]
+
+\setupframed[\c!offset=0pt,\c!framecolor=PlusColor]
+
+\framed
+  [\c!strut=\v!no,
+   \c!background=\v!screen,
+   \c!backgroundscreen=1]
+  {\hbox
+     {\framed
+        [\c!height=15cm,\c!width=1.25cm]
+        {\translate[nl=rugwit,en=backspace]}%
+      \vbox
+        {\offinterlineskip
+         \setupframed[\c!width=7.5cm]
+         \framed
+           [\c!height=1.25cm]
+           {\translate[nl=kopwit,en=topspace]}
+         \framed
+           [\c!height=1.00cm,\c!background=\v!screen,\c!backgroundscreen=.85]
+           {\translate[nl=hoofd,en=header]}
+         \framed
+           [\c!height=10.50cm,\c!background=\v!screen,\c!backgroundscreen=.95]
+           {\translate[nl=tekst,en=text]}
+         \framed
+           [\c!height=1.00cm,\c!background=\v!screen,\c!backgroundscreen=.85]
+           {\translate[nl=hoofd,en=footer]}
+         \framed
+           [\c!height=1.25cm]
+           {}}%
+      \framed[\c!height=15cm,\c!width=1.75cm]{}}}
+
+\vskip.25cm
+
+\hbox to 10.5cm
+  {\hskip1.25cm
+   \llap{\hbox to 2cm
+      {\color[PlusColor]{\vl}\hss
+       \translate[nl=marge,en=margin]\hss
+       \color[PlusColor]{\vl}}}%
+   \hskip7.5cm
+   \hbox to 2.00cm
+     {\color[PlusColor]{\vl}\hss
+      \translate[nl=marge,en=margin]\hss
+      \color[PlusColor]{\vl}}%
+   \hss}
+
+\protect
+

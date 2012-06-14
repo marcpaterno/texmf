@@ -1,0 +1,8 @@
+\vskip1ex
+\starttabulate[|l|l|l|]
+\NC \bf \rlap{terms}  \NC \qquad \NC \bf intented usage        \NC \NR
+\NC regular, serif, roman   \NC            \NC \rmtf main text          \NC \NR
+\NC support, sans            \NC             \NC \sstf section headings   \NC \NR
+\NC teletype, mono, type \NC          \NC \tttf code examples      \NC \NR
+\stoptabulate
+\vskip1ex

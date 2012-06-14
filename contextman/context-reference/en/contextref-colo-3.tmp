@@ -1,0 +1,9 @@
+\offinterlineskip
+\halign
+  {\hss#\cr
+   \showcolorgroup[red]    [horizontal,name,number]\cr
+   \showcolorgroup[green]  [horizontal,name]\cr
+   \showcolorgroup[blue]   [horizontal,name]\cr
+   \showcolorgroup[yellow] [horizontal,name]\cr
+   \showcolorgroup[magenta][horizontal,name]\cr
+   \showcolorgroup[cyan]   [horizontal,name]\cr}

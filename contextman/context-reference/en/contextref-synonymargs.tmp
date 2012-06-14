@@ -1,0 +1,10 @@
+\vskip 1ex
+\starttabulate[|lT|p|]
+\NC encoding \NC The font file encoding for \TFM-based (\MKII) fonts.\NC \NR
+\NC handling \NC The font handling for \MKII\ (see  previous chapter).\NC \NR
+\NC features \NC The font handling for \MKIV\ and \XETEX\ (see previous chapter).\NC \NR
+\NC mapping  \NC letter case change mapping for \MKII\ that may be used in special
+                 cases; never actually used in the \CONTEXT\ core.
+                 See~\in{chapter}[languages] on languages for details.\NC \NR
+\stoptabulate
+\vskip 1ex

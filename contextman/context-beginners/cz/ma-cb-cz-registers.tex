@@ -1,0 +1,121 @@
+% Translation: busaj
+% Checking:    2006-11-14 zyka
+\startcomponent ma-cb-cz-registers
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Registers}
+\chapter{Rejstøíky}
+
+%\index{register}
+\index{rejstøík}
+
+\Command{\tex{index}}
+\Command{\tex{placeindex}}
+\Command{\tex{completeindex}}
+\Command{\tex{defineregister}}
+\Command{\tex{placeregister}}
+\Command{\tex{completeregister}}
+\Command{\tex{setupregister}}
+
+%It is possible to generate one or more registers. By default
+%the command \type{\index} is available. If you want to add
+%a word to the index you type:
+V~\CONTEXT{}u je mo¾né vytvoøit jeden nebo více rejstøíkù. Implicitnì
+je k~dispozici pøíkaz \type{\index}. Jestli¾e chceme do
+rejstøíku pøidat nìjaké slovo, napí¹eme napøíklad: 
+
+%\starttyping
+%\index{town hall}
+%\stoptyping
+\starttyping
+\index{radnice}
+\stoptyping
+
+%The word {\em town hall} will appear as an index entry. An
+%index is sorted in alphabetical order by an auxilliary
+%program. Sometimes the index word does not appear in normal alphabetic
+%order. For example, entries such as symbols have to provide extra
+%sorting information in order to produce a correct alphabetical
+%list:
+Výraz {\em radnice} se objeví jako heslo rejstøíku. Rejstøík je
+pomocným programem seøazen podle abecedy. Pokud je nìkteré heslo
+tøeba zatøídit mimo bì¾né abecední poøadí, napøíklad v~pøípadì symbolu,
+musí být doplnìno o~dal¹í tøídící informaci:
+
+%\starttyping
+%\index[minus]{$-$}
+%\stoptyping
+\starttyping
+\index[mínus]{$-$}
+\stoptyping
+
+%Sometimes you have sub- or sub sub entries. These can be
+%defined as follows:
+Nìkdy máme pod- nebo podpodhesla. Ty se zadávají následujícím zpùsobem:
+
+%\starttyping
+%\index{town hall+location}
+%\index{town hall+architecture}
+%\stoptyping
+\starttyping
+\index{radnice+poloha}
+\index{radnice+architektura}
+\stoptyping
+
+%You can generate your indexlist with:
+Rejstøík vygenerujeme pøíkazem
+
+\starttyping
+\placeindex
+\stoptyping
+
+% or
+nebo
+
+\starttyping
+\completeindex
+\stoptyping
+
+%The command \type{\index} is a predefined \CONTEXT\ command,
+%but of course you can also define your own registers.
+Pøíkaz \type{\index} je v~\CONTEXT{}u pøeddefinovaný, ale
+samozøejmì mù¾eme také definovat své vlastní rej\-støí\-ky:
+
+\shortsetup{defineregister}
+
+%For example if you want to make a new register based on the
+%streets in Hasselt you could type:
+Chceme-li napøíklad vytvoøit rejstøík ulic v~Hasseltu,
+mù¾eme napsat:
+
+%\starttyping
+%\defineregister[street][streets]
+%\stoptyping
+\starttyping
+\defineregister[ulice][ulice]
+\stoptyping
+
+%Now a new register command \type{\street} is available. An
+%new index entry could be \type{\street{Ridderstraat}}. To
+%produce a list of entries you could now use:
+Nyní je k~dispozici nový pøíkaz pro tvorbu rejstøíku \type{\ulice}. 
+Heslem tohoto nového rejstøíku mù¾e být tøeba \type{\ulice{Ridderstraat}}. 
+Samotný {\em seznam ulic\/} nyní vytvoøíme pou¾itím pøíkazù:
+
+%\starttyping
+%\placestreets
+%\completestreets
+%\stoptyping
+\starttyping
+\placeulice
+\completeulice
+\stoptyping
+
+% You can alter the display of the registers with:
+Vzhled rejstøíkù mù¾eme mìnit pøíkazem:
+
+\shortsetup{setupregister}
+
+\stopcomponent

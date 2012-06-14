@@ -1,0 +1,26 @@
+\startsometable
+\noalign
+  {\vskip\lineheight
+   \color[gray]{\hrule height \ht\strutbox depth \dp\strutbox}
+   \vskip-2\lineheight
+   \nobreak}%
+\NC \showstruts\hbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\vbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\vtop{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\lbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\cbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\rbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\sbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\tbox{\hsize1cm \strut a\par a\strut} \NC
+    \showstruts\bbox{\hsize1cm \strut a\par a\strut} \NC \NR
+\noalign{\nobreak}
+\NC \type {\hbox} \NC
+    \type {\vbox} \NC
+    \type {\vtop} \NC
+    \type {\lbox} \NC
+    \type {\cbox} \NC
+    \type {\rbox} \NC
+    \type {\sbox} \NC
+    \type {\tbox} \NC
+    \type {\bbox} \NC \NR
+\stopsometable

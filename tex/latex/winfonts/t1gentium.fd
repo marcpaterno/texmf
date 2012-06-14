@@ -1,0 +1,13 @@
+\ProvidesFile{t1gentium.fd}[gentium]
+
+\DeclareFontFamily{T1}{gentium}{}
+\DeclareFontShape{T1}{gentium}{b}{n}{<->ecgentiumbd}{}
+\DeclareFontShape{T1}{gentium}{b}{sl}{<-> ecgentiumbdo}{}
+\DeclareFontShape{T1}{gentium}{b}{it}{<-> ecgentiumbi}{}
+\DeclareFontShape{T1}{gentium}{m}{n}{<-> ecgentium}{}
+\DeclareFontShape{T1}{gentium}{m}{sl}{<-> ecgentiumo}{}
+\DeclareFontShape{T1}{gentium}{m}{it}{<-> ecgentiumi}{}
+\DeclareFontShape{T1}{gentium}{bx}{n}{<->ssub * gentium/b/n}{}
+\DeclareFontShape{T1}{gentium}{bx}{sl}{<->ssub * gentium/b/sl}{}
+\DeclareFontShape{T1}{gentium}{bx}{it}{<->ssub * gentium/b/it}{}
+\endinput

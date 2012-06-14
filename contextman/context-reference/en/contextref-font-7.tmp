@@ -1,0 +1,10 @@
+\definebodyfont [12pt] [ss]
+  [tf=hv  sa 1.000,
+   bf=hvb sa 1.000,
+   it=hvo sa 1.000,
+   sl=hvo sa 1.000,
+  tfa=hv  sa 1.200,
+  tfb=hv  sa 1.440,
+  tfc=hv  sa 1.728,
+  tfd=hv  sa 2.074,
+   sc=hv  sa 1.000]

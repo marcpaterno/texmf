@@ -1,0 +1,220 @@
+8
+
+dir
+269
+http://foundry.supelec.fr/svn/contextman/context-beginners
+http://foundry.supelec.fr/svn/contextman
+
+
+
+2009-03-18T08:17:42.688378Z
+268
+sebastien
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d8c78c-c36f-4a2b-834e-415383aec5ca
+
+ma-cb.rb
+file
+
+
+
+
+2009-08-17T03:01:16.000000Z
+b60dde0cfb24e1fac3f60710e0a6ec6b
+2006-06-13T07:49:39.451855Z
+6
+vit
+
+zh
+dir
+
+cont-en-extra.xml
+file
+
+
+
+
+2009-08-17T03:01:16.000000Z
+d65659a63fa102cf5542e72980c01769
+2006-11-14T23:36:25.493468Z
+103
+vit
+
+vn
+dir
+
+ma-cb-copyright.tex
+file
+
+
+
+
+2009-08-17T03:01:16.000000Z
+b2fa0dd19e329cb9be22381c14f1acdb
+2006-10-16T10:00:43.818453Z
+73
+vit
+
+ma-cb-bulletin.tex
+file
+
+
+
+
+2009-08-17T03:01:16.000000Z
+594d4985cf69c3fe8354dd83f1e197f0
+2007-03-26T10:19:25.535316Z
+127
+vit
+
+ma-cb-screen.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+f48f7331689c9cf0d46d375f85c79672
+2008-11-04T17:39:18.423864Z
+235
+cuteobr
+
+ma-cb-links.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+6ebd8c706297dff146303cf1fb482645
+2006-11-17T00:13:27.609360Z
+108
+vit
+
+ma-cb-colophon.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+adb7f17a343f83e21c22c7db1be5ea60
+2006-10-16T10:00:43.818453Z
+73
+vit
+
+ma-cb-setups.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+58db67352d85aa6319678df763a66740
+2009-02-20T00:21:56.091163Z
+266
+adityam
+
+t-setup.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+b680c116af5078d6fc39fdc4cca212e2
+2009-02-20T00:21:56.091163Z
+266
+adityam
+
+en
+dir
+
+ma-cb-abbreviations.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+a7f8ed626dceb9e1d974a20fe135c890
+2009-02-20T00:21:56.091163Z
+266
+adityam
+
+fr
+dir
+
+nl
+dir
+
+cz
+dir
+
+generic
+dir
+
+ma-cb-style.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+fc662d14ea18abd1d5d1cde2ff6a28a1
+2009-02-20T00:21:56.091163Z
+266
+adityam
+
+ma-cb-graphics.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+c83f3e0a4d421dacff62c0d6c333aaa9
+2006-10-16T10:00:43.818453Z
+73
+vit
+
+makefile
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+d9c550102a5d7dc6f00b2276192e61be
+2009-02-20T00:21:56.091163Z
+266
+adityam
+
+vi
+dir
+
+ma-cb.tex
+file
+
+
+
+
+2009-08-17T03:01:17.000000Z
+574f95067bc4ad4b34c80003ffd86fe9
+2008-11-04T17:39:18.423864Z
+235
+cuteobr
+

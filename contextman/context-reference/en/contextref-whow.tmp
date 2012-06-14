@@ -1,0 +1,4 @@
+\definetypeface [whow] [rm] [serif] [modern] [latin-modern] [encoding=ec]
+\definetypeface [whow] [ss] [sans]  [modern] [latin-modern] [encoding=ec]
+\definetypeface [whow] [tt] [mono]  [modern] [latin-modern] [encoding=ec]
+\definetypeface [whow] [mm] [math]  [modern] [latin-modern] [encoding=ec]

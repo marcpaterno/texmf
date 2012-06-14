@@ -1,0 +1,20 @@
+  \starttable[||||||]
+    \HL
+    \VL \bf factor           \VL \bf width            \VL
+        \bf height           \VL \bf width and height \VL
+        \bf nothing          \VL \SR
+    \HL
+    \VL \type{max}           \VL automatically        \VL
+        automatically        \VL automatically        \VL
+        width or height      \VL \FR
+    \VL \type{fit}           \VL automatically        \VL
+        automatically        \VL automatically        \VL
+        width or height      \VL \MR
+    \VL \type{broad}         \VL automatically        \VL
+        automatically        \VL automatically        \VL
+        width or height      \VL \MR
+    \VL \type{...}           \VL width                \VL
+        height               \VL isometric            \VL
+        original dimensions  \VL \LR
+    \HL
+  \stoptable

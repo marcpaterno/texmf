@@ -1,0 +1,3 @@
+\loadmapfile [koeieletters]
+\definefont  [ContextLogo] [koeielogos at 72pt]
+\ContextLogo \char 2

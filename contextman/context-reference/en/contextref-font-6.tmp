@@ -1,0 +1,12 @@
+\definebodyfont [12pt] [rm]
+    [ tf=cmr12,
+     tfa=cmr12 scaled \magstep1,
+     tfb=cmr12 scaled \magstep2,
+     tfc=cmr12 scaled \magstep3,
+     tfd=cmr12 scaled \magstep4,
+      bf=cmbx12,
+      it=cmti12,
+      sl=cmsl12,
+      bi=cmbxti10 at 12pt,
+      bs=cmbxsl10 at 12pt,
+      sc=cmcsc10 at 12pt]

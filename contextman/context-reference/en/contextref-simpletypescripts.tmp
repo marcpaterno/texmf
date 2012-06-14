@@ -1,0 +1,40 @@
+\vskip 1ex
+\begingroup
+\switchtobodyfont[9pt]
+\starttabulate[|l||l|l|l|l|]
+\NC {\bf Typescript  }\NC {\bf Style rm    }  \NC {\bf Style ss }      \NC {\bf Style tt}     \NC  {\bf Style mm }  \NC \FR
+\NC OmegaLGC          \NC omega               \NC --                   \NC omega              \NC --                \NC \NR
+\NC antykwa-torunska  \NC antykwa-torunska    \NC modern               \NC modern             \NC antykwa-torunska  \NC \NR
+\NC cbgreek           \NC cbgreek             \NC cbgreek              \NC cbgreek            \NC --                \NC \NR
+\NC cbgreek-all       \NC cbgreek             \NC cbgreek              \NC cbgreek            \NC --                \NC \NR
+\NC cbgreek-medium    \NC cbgreek             \NC cbgreek              \NC cbgreek            \NC --                \NC \NR
+\NC cow               \NC cow                 \NC cow serif            \NC modern             \NC cow               \NC \NR
+\NC fallback          \NC modern              \NC modern               \NC modern             \NC modern            \NC \NR
+\NC fourier           \NC fourier             \NC modern               \NC modern             \NC fourier           \NC \NR
+\NC iwona             \NC modern              \NC iwona                \NC modern             \NC iwona             \NC \NR
+\NC iwona-heavy       \NC modern              \NC iwona-heavy          \NC modern             \NC iwona-heavy       \NC \NR
+\NC iwona-light       \NC modern              \NC iwona-light          \NC modern             \NC iwona-light       \NC \NR
+\NC iwona-medium      \NC modern              \NC iwona-medium         \NC modern             \NC iwona-medium      \NC \NR
+\NC lucida            \NC lucida              \NC lucida               \NC lucida             \NC lucida            \NC \NR
+\NC lucidabfm         \NC lucida              \NC lucida               \NC lucida             \NC lucida bfmath     \NC \NR
+\NC lucidaboldmath    \NC lucida              \NC lucida               \NC lucida             \NC lucida boldmath   \NC \NR
+\NC modern            \NC modern              \NC modern               \NC modern             \NC modern            \NC \NR
+\NC modern-base       \NC (computer-)modern   \NC (computer-)modern    \NC (computer-)modern  \NC (computer-)modern \NC \NR
+\NC modernvariable    \NC simple              \NC modern               \NC modern             \NC modern            \NC \NR
+\NC optima            \NC palatino            \NC optima-nova          \NC modern             \NC palatino          \NC \NR
+\NC optima-nova       \NC optima-nova sans    \NC optima-nova          \NC latin-modern       \NC latin-modern      \NC \NR
+\NC optima-nova-os    \NC optima-nova-os sans \NC optima-nova-os       \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino          \NC palatino-nova       \NC palatino-sans        \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino          \NC palatino            \NC modern               \NC modern             \NC palatino          \NC \NR
+\NC palatino-informal \NC palatino-nova       \NC palatino-informal    \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino-light    \NC palatino-nova       \NC palatino-sans-light  \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino-medium   \NC palatino-nova       \NC palatino-sans-medium \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino-normal   \NC palatino-nova       \NC palatino-sans-normal \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino-nova     \NC palatino-nova       \NC palatino-sans        \NC latin-modern       \NC latin-modern      \NC \NR
+\NC palatino-sans     \NC palatino-nova       \NC palatino-sans        \NC latin-modern       \NC latin-modern      \NC \NR
+\NC postscript        \NC times               \NC helvetica            \NC courier            \NC times             \NC \NR
+\NC sheep             \NC sheep               \NC sheep serif          \NC modern             \NC sheep             \NC \NR
+\NC times             \NC times               \NC helvetica            \NC modern             \NC times             \NC \NR
+\stoptabulate
+\endgroup
+\vskip 1ex

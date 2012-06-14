@@ -1,0 +1,12 @@
+\vskip 1ex
+\starttabulate[|l|l|]
+\NC \type{\bf} \NC bold                                \NC\NR
+\NC \type{\it} \NC italic                              \NC\NR
+\NC \type{\bi} \NC bolditalic, italicbold              \NC\NR
+\NC \type{\sl} \NC slanted                             \NC\NR
+\NC \type{\bs} \NC boldslanted, slantedbold            \NC\NR
+\NC \type{\sc} \NC smallcaps                           \NC\NR
+\NC \type{\os} \NC mediaeval (from {\em oldstyle}) \NC\NR
+\NC \type{\tf} \NC normal (from {\em typeface})    \NC\NR
+\stoptabulate
+\vskip 1ex

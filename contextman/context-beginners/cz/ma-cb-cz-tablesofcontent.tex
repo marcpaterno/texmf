@@ -1,0 +1,313 @@
+% Translation: 2006-08-24 Martina Plachá
+% Checking:    2006-11-13 zyka
+\startcomponent ma-cb-cz-tablesofcontent
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Table of contents (lists)}
+\chapter{Obsah (seznamy)}
+
+%\index{table of contents}
+%\index{list}
+\index{obsah}
+\index{seznamy}
+
+\Command{\tex{completecontent}}
+\Command{\tex{placecontent}}
+\Command{\tex{definelist}}
+\Command{\tex{setuplist}}
+\Command{\tex{writetolist}}
+\Command{\tex{writebetweenlist}}
+\Command{\tex{definecombinedlist}}
+\Command{\tex{setupcombinedlist}}
+
+%A table of contents contains chapter numbers, chapter titles
+%and page numbers and can be extended with sections,
+%sub sections, etc. A table of contents is generated
+%automatically by typing:
+Obsah zahrnuje èísla kapitol, názvy kapitol a~èísla stránek;
+mù¾e být roz¹íøen o~sekce, podsekce atd. Obsah se
+generuje automaticky napsáním:
+
+\starttyping
+\placecontent
+\stoptyping
+
+%Which table of contents is produced depends on the location
+%of this command in your document. At the start of the
+%document it will generate a list of chapters, sections etc.
+%But at the top of a chapter:
+
+Jaký obsah se vytvoøí, zále¾í na umístìní tohoto pøíkazu
+v~dokumentu. Na zaèátku dokumentu se vygeneruje seznam {\em v¹ech\/}
+kapitol, sekcí atd. Ale umístìním na zaèátku jednotlivých kapitol, tj.:
+
+%\startbuffer
+%\chapter{Hasselt in Summer}
+%
+%\placecontent
+%
+%\section{Hasselt in July}
+%
+%\section{Hasselt in August}
+%
+%\stopbuffer
+%
+%\typebuffer
+
+\startbuffer
+\chapter{Hasselt v létì}
+
+\placecontent
+
+\section{Hasselt v èervenci}
+
+\section{Hasselt v srpnu}
+
+\stopbuffer
+
+\typebuffer
+
+%it will only produce a list of (sub) section titles with the
+%corresponding section numbers and page numbers.
+se pouze vytvoøí seznam názvù sekcí s~odpovídajícím
+oèíslováním a s~èísly stránek.
+
+%The command \type{\placecontent} is available after
+%definition with:
+Pøíkaz \type{\placecontent} mù¾eme pou¾ít poté, co nadefinujeme nový
+seznam pomocí:
+
+\shortsetup{definecombinedlist}
+
+%This command and \type{\definelist} allows you to define
+%your own lists necessary for structuring your documents.
+Tento pøíkaz spolu s~\type{\definelist} nám dovolí nadefinovat vlastní
+seznam, potøebný ke strukturování celého dokumentu.
+
+%The use of this command and its related commands is
+%illustrated for the table of contents.
+Pou¾ití tohoto a~dal¹ích pøíbuzných pøíkazù je ukázáno na
+následujícím pøíkladu:
+
+%\startbuffer
+%\definelist[chapter]
+%\setuplist
+%   [chapter]
+%   [before=\blank,
+%    after=\blank,
+%    style=bold]
+%
+%\definelist[section]
+%\setuplist
+%   [section]
+%   [alternative=d]
+%\stopbuffer
+%
+%\typebuffer
+
+\startbuffer
+\definelist[kapitola]
+\setuplist
+   [kapitola]
+   [before=\blank,
+    after=\blank,
+    style=bold]
+
+\definelist[podkapitola]
+\setuplist
+   [podkapitola]
+   [alternative=d]
+\stopbuffer
+
+\typebuffer
+
+
+%Now there are two lists of chapters and sections and these
+%will be combined in a table of contents with the command
+%\type{\definecombinedlist}.
+Nyní máme dva seznamy: seznam kapitol a~seznam podkapitol. Oba budou
+slouèeny do jediného obsahu pøíkazem \type{\definecombinedlist}. 
+
+%\startbuffer
+%\definecombinedlist
+%   [content]
+%   [chapter,section]
+%   [level=subsection]
+%\stopbuffer
+%
+%\typebuffer
+
+\startbuffer
+\definecombinedlist
+   [obsah]
+   [kapitola,podkapitola]
+   [level=subsection]
+\stopbuffer
+
+\typebuffer
+
+%Now two commands are available: \type{\placecontent} and
+%\type{\completecontent}. With the second command the title
+%of the table of contents will be added to the table of
+%contents.
+Po tomto úkonu máme k~dispozici dva dal¹í pøíkazy: \type{\placeobsah}
+a~\type{\completeobsah}. Oba zpùsobí vysázení obsahu, ten druhý je¹tì
+pøidá nadpis \quote{Obsah}.
+
+%The layout of lists can be varied with the parameter
+%\type{alternative}.
+
+Vzhled seznamu lze nastavit parametrem
+\type{alternative}.
+
+%\placetable
+%  [here,force]
+%  [tab:alternatives]
+%  {Alternatives for displaying lists.}
+%\starttable[|c|l|]
+%\HL
+%\NC \bf Alternative \NC \bf Display \NC\SR
+%\HL
+%\NC \type{a} \NC number -- title -- page number              \NC\FR
+%\NC \type{b} \NC number -- title -- spaces -- page number    \NC\MR
+%\NC \type{c} \NC number -- title -- dots -- page number      \NC\MR
+%\NC \type{d} \NC number -- title -- page number (continuing) \NC\MR
+%\NC \type{e} \NC reserved for interactive purposes           \NC\MR
+%\NC \type{f} \NC reserved for interactive purposes           \NC\LR
+%\HL
+%\stoptable
+
+\placetable
+  [here,force]
+  [tab:alternatives]
+  {Nastavení formátování seznamù.}
+\starttable[|c|l|]
+\HL
+\NC \bf Nastavení \NC \bf Formátování \NC\SR
+\HL
+\NC \type{a} \NC èíslo -- název -- èíslo stránky               \NC\FR
+\NC \type{b} \NC èíslo -- název -- mezery -- èíslo stránky     \NC\MR
+\NC \type{c} \NC èíslo -- název -- teèky -- èíslo stránky      \NC\MR
+\NC \type{d} \NC èíslo -- název -- èíslo stránky (v~odstavci)  \NC\MR
+\NC \type{e} \NC rezervováno pro interaktivní úèely            \NC\MR
+\NC \type{f} \NC rezervováno pro interaktivní úèely            \NC\LR
+\HL
+\stoptable
+
+%Lists are set up with:
+Seznamy se nastavují pomocí:
+
+\shortsetup{setuplist}
+\shortsetup{setupcombinedlist}
+
+%If you want to change the layout of the generated table of
+%contents you'll have to remember that it is a list.
+Pokud chceme zmìnit vzhled generovaného obsahu, musíme pamatovat
+na to, ¾e je to seznam.
+
+%\startbuffer
+%\setupcombinedlist
+%  [content]
+%  [alternative=c,
+%   aligntitle=no,
+%   width=2.5cm]
+%\stopbuffer
+%
+%\typebuffer
+\startbuffer
+\setupcombinedlist
+  [obsah]
+  [alternative=c,
+   aligntitle=no,
+   width=2.5cm]
+\stopbuffer
+
+\typebuffer
+
+% This Will Result In A Somewhat Different Layout Than The
+% Default One.
+Od této chvíle se bude formátování obsahu li¹it od jeho standardního
+nastavení.
+
+%Lists Are Called Up And Placed With:
+Seznamy se vyvolávají a~umís»ují pomocí:
+
+\shortsetup{placelist}
+
+%So if you want a table of content you type:
+Chceme-li tedy pouze èást obsahu, napí¹eme:
+
+\starttyping
+\placecontent[level=section]
+\stoptyping
+
+% or
+nebo
+
+\starttyping
+\completecontent[level=section]
+\stoptyping
+
+% only the sections will be displayed. You may need this
+% option when you have a well structured document that has sub
+% sub sub sub sub sections and you don't want those in the
+% table of contents.
+a zobrazí se pouze kapitoly a sekce. To se mù¾e hodit,
+pokud máme slo¾itý a~strukturovaný obsah, který má spoustu pod pod
+a~pod odstavcù, které v~celkovém obsahu nechceme vypisovat.
+
+% A long list or a long table of contents will use up more
+% than one page. To be able to force page breaking you can
+% type:
+Dlouhý seznam nebo obsah se nevejde na jednu stránku. Potøebujeme-li
+ve vhodném místì vynutit pøechod na novou stránku, napí¹eme: 
+
+\starttyping
+\completecontent[2.2,8.5,12.3.3]
+\stoptyping
+
+%A page break will occur after section 2.2 and 8.5 and
+%sub section~12.3.3.
+Zalomení stránky se objeví po sekci 2.2 a 8.5 a~podsekci 12.3.3.
+
+% In some cases you want to be able to write your own text in
+% an automatically generated list. This is done with:
+
+% \shortsetup{writetolist}
+% \shortsetup{writebetweenlist}
+
+V~nìkterých pøípadech chceme v~automaticky
+generovaném seznamu napsat vlastní text.
+Toho dosáhneme pomocí:
+
+\shortsetup{writetolist}
+\shortsetup{writebetweenlist}
+
+% For Example If You Want To Make A Remark In Your Table Of
+% Contents After A Section Titled {\Em Hotels In Hasselt}
+% You Can Type:
+
+Napøíklad, chceme-li udìlat poznámku v~obsahu po sekci nazvané 
+{\em  Hotely v~Hasseltu}, napí¹eme:
+
+% \startbuffer
+% \section{Hotels in Hasselt}
+% \writebetweenlist[section]{\blank}
+% \writetolist[section]{}{---under construction---}
+% \writebetweenlist[section]{\blank}
+% \stopbuffer
+
+% \typebuffer
+
+\startbuffer
+\section{Hotely v Hasseltu}
+\writebetweenlist[section]{\blank}
+\writetolist[section]{}{---ve výstavbì---}
+\writebetweenlist[section]{\blank}
+\stopbuffer
+
+\typebuffer
+
+\stopcomponent

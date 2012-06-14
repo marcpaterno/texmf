@@ -1,0 +1,13 @@
+\starttable[|l|l|]
+\HL
+\VL \bf command            \VL \bf meaning     \VL\SR
+\HL
+\VL \type{\NC}             \VL Next Column     \VL\FR
+\VL \type{\FC}             \VL First Column    \VL\MR
+\VL \type{\MC}             \VL Mid Column      \VL\MR
+\VL \type{\LC}             \VL Last Column     \VL\MR
+\VL                        \VL                 \VL\MR
+\VL \type{\LOW}\arg{text}  \VL Low Text        \VL\MR
+\VL                        \VL                 \VL\LR
+\HL
+\stoptable

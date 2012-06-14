@@ -1,0 +1,13 @@
+\ProvidesFile{t1arial.fd}[arial]
+
+\DeclareFontFamily{T1}{arial}{}
+\DeclareFontShape{T1}{arial}{b}{n}{<->ecarialbd}{}
+\DeclareFontShape{T1}{arial}{b}{sl}{<-> ecarialbdo}{}
+\DeclareFontShape{T1}{arial}{b}{it}{<-> ecarialbi}{}
+\DeclareFontShape{T1}{arial}{m}{n}{<-> ecarial}{}
+\DeclareFontShape{T1}{arial}{m}{sl}{<-> ecarialo}{}
+\DeclareFontShape{T1}{arial}{m}{it}{<-> ecariali}{}
+\DeclareFontShape{T1}{arial}{bx}{n}{<->ssub * arial/b/n}{}
+\DeclareFontShape{T1}{arial}{bx}{sl}{<->ssub * arial/b/sl}{}
+\DeclareFontShape{T1}{arial}{bx}{it}{<->ssub * arial/b/it}{}
+\endinput

@@ -1,0 +1,67 @@
+8
+
+dir
+269
+http://foundry.supelec.fr/svn/contextman/context-reference
+http://foundry.supelec.fr/svn/contextman
+
+
+
+2009-04-18T13:50:54.657942Z
+269
+patrick
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d8c78c-c36f-4a2b-834e-415383aec5ca
+
+en
+dir
+
+TODO
+file
+
+
+
+
+2009-08-17T03:00:55.000000Z
+f273625c3ad118eda84e666348e19ba4
+2008-07-29T14:40:33.768218Z
+142
+taco
+
+COPYING
+file
+
+
+
+
+2009-08-17T03:00:55.000000Z
+ad1419ecc56e060eccf8184a87c4285f
+2008-07-29T14:40:33.768218Z
+142
+taco
+
+README
+file
+
+
+
+
+2009-08-17T03:00:55.000000Z
+0816003133b65e90f176d3a2c6c463c7
+2008-07-29T14:40:33.768218Z
+142
+taco
+

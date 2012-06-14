@@ -1,0 +1,20 @@
+\def\show
+  {\hbox
+    {\forgetall
+     \offinterlineskip
+     \vbox
+       {\hsize1em\hl[1]\endgraf\vskip1ex\hl[1]}%
+     \hskip.25em
+     \vbox
+       {\hsize.5em \vskip\linewidth x\vskip\linewidth}}}%
+
+\starttable[|c|c|c|c|c|c|]
+\HL
+\VL \type{\tf} \VL \type{\bf} \VL \type{\sl}  \VL
+    \type{\tt} \VL \type{\ss} \VL \type{\tfx} \VL\SR
+\HL
+\VL \tf\show   \VL \bf\show   \VL \sl\show    \VL
+    \tt\show   \VL \ss\show   \VL \tfx\show   \VL\SR
+\HL
+\stoptable
+

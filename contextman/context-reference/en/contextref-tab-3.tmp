@@ -1,0 +1,13 @@
+\starttable[|l|l|]
+\HL
+\VL \bf command   \VL \bf meaning     \VL\SR
+\HL
+\VL \type{\HL}    \VL Horizontal Line \VL\FR
+\VL \type{\VL}    \VL Vertical Line   \VL\MR
+\VL               \VL                 \VL\MR
+\VL \type{\DL}    \VL Division Line   \VL\MR
+\VL \type{\DL[n]} \VL Division Line n \VL\MR
+\VL \type{\DC}    \VL Division Column \VL\MR
+\VL \type{\DR}    \VL Division Row    \VL\LR
+\HL
+\stoptable

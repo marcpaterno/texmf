@@ -1,0 +1,12 @@
+\vskip 1ex
+\starttabulate[|l|l|]
+\NC \type{\tt}               \NC type, mono      \NC\NR
+\NC \type{\ttx}              \NC smalltype       \NC\NR
+\NC \type{\ss}               \NC sans, sansserif \NC\NR
+\NC \type{\ss\bf}            \NC sansbold        \NC\NR
+\NC \type{\setsmallbodyfont} \NC smallbodyfont   \NC\NR
+\NC \type{\setbigbodyfont}   \NC bigbodyfont     \NC\NR
+\NC \type{\smallcapped}      \NC cap, capital    \NC\NR
+\NC \type{\WORD}             \NC WORD            \NC\NR
+\stoptabulate
+\vskip 1ex

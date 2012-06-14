@@ -1,0 +1,11 @@
+  \hsize.2\hsize
+  \def\Alpha{\translate[nl=alfa, en=alpha]}
+  \def\Beta {\translate[nl=beta, en=beta]}
+  \def\Gamma{\translate[nl=gamma,en=gamma]}
+  \def\Delta{\translate[nl=delta,en=delta]}
+  \startcombination[4]
+    {\ruledvbox to 5\baselineskip {\Alpha\par\Beta\blank\Gamma\par\Delta}} {}
+    {\ruledvbox to 5\baselineskip {\Alpha\par\Beta\par\Gamma\blank\Delta}} {}
+    {\ruledvbox to 5\baselineskip {\Alpha\blank\Beta\blank\Gamma}}        {}
+    {\ruledvbox to 5\baselineskip {\Alpha\par\Beta\par\Gamma}}              {}
+  \stopcombination

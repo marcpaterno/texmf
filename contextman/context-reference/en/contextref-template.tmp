@@ -1,0 +1,7 @@
+\starttablehead[demo head]
+\HL   \VL this \VL that \VL\AR   \HL
+\stoptablehead
+
+\starttabletail[demo tail]
+\HL
+\stoptabletail

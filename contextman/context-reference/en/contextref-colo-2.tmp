@@ -1,0 +1,9 @@
+\setupblackrules[width=.25\hsize,height=\ht\strutbox,depth=\dp\strutbox]
+\startcombination[3*2]
+  {\color    [cyaan:x]{\blackrule}} {\colorvalue{cyaan:x}}
+  {\color    [cyaan:y]{\blackrule}} {\colorvalue{cyaan:y}}
+  {\color    [cyaan:z]{\blackrule}} {\colorvalue{cyaan:z}}
+  {\graycolor[cyaan:x]{\blackrule}} {\grayvalue {cyaan:x}}
+  {\graycolor[cyaan:y]{\blackrule}} {\grayvalue {cyaan:y}}
+  {\graycolor[cyaan:z]{\blackrule}} {\grayvalue {cyaan:z}}
+\stopcombination

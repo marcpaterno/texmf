@@ -1,0 +1,7 @@
+\hbox
+  {\showcolorgroup[red]     [vertical,name,number]%
+   \showcolorgroup[green]   [vertical,name]%
+   \showcolorgroup[blue]    [vertical,name]%
+   \showcolorgroup[yellow]  [vertical,name]%
+   \showcolorgroup[magenta] [vertical,name]%
+   \showcolorgroup[cyan]    [vertical,name]}

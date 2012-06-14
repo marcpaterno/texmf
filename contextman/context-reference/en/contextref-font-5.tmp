@@ -1,0 +1,5 @@
+\definebodyfont [default] [rm]
+  [ tf=Serif       sa 1,
+    ...
+    it=SerifItalic sa 1,
+    ... ]

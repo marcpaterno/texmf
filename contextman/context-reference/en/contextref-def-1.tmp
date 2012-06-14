@@ -1,0 +1,4 @@
+\CONTEXT\ comes with a number of \PERL\ scripts, like
+\TEXUTIL\ and \TEXEXEC. Also a number of modules are
+available, like \PPCHTEX\ for typesetting chemical
+structures.

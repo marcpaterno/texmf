@@ -1,0 +1,4 @@
+\definetypeface [nojoke] [rm] [serif] [times]     [default] [encoding=texnansi]
+\definetypeface [nojoke] [ss] [sans]  [helvetica] [default] [encoding=texnansi]
+\definetypeface [nojoke] [tt] [mono]  [courier]   [default] [encoding=texnansi]
+\definetypeface [nojoke] [mm] [math]  [times]     [default] [encoding=texnansi]

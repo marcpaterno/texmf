@@ -1,0 +1,10 @@
+\vskip 1ex
+\starttabulate[|l|l|]
+\NC \type{\bfx} \NC smallbold                           \NC\NR
+\NC \type{\itx} \NC smallitalic                         \NC\NR
+\NC \type{\bix} \NC smallbolditalic, smallitalicbold    \NC\NR
+\NC \type{\slx} \NC smallslanted                        \NC\NR
+\NC \type{\bsx} \NC smallboldslanted, smallslantedbold  \NC\NR
+\NC \type{\tfx} \NC small, smallnormal                  \NC\NR
+\stoptabulate
+\vskip 1ex

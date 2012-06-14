@@ -1,0 +1,191 @@
+% Translation: busaj
+% Checking:    2006-11-16 zyka
+\startcomponent ma-cb-cz-modules
+\project ma-cb
+\product ma-cb-cz
+\environment ma-cb-env-cz
+
+%\chapter{Using modules}
+\chapter{Externí moduly}
+
+%\index{module+chemic}
+%\index{module+units}
+%\index{module+chart}
+%\index{module+pictex}
+%\index{chemical structures}
+%\index{flowcharts}
+%\index{units}
+\index{modul+bib}
+\index{modul+chemic}
+\index{modul+units}  % v originale asi chybne len "unit"
+\index{modul+pictex}
+\index{modul+chart}
+\index{modul+steps}
+\index{modul+narrowtt}
+\index{modul+amsl}
+\index{modul+nath}
+\index{modul+streams}
+\index{modul+gnuplot}
+\index{modul+lilypond}
+\index{chemické struktury}
+\index{vývojové diagramy}
+\index{jednotky}
+\index{bibliografie}
+\index{pictex}
+\index{stavové diagramy}
+\index{AMSmath}
+\index{synchronizace textù}
+\index{strojopis+úzký}
+\index{GNUplot}
+\index{LilyPond}
+
+\Command{\tex{usemodule}}
+
+%For reasons of efficiency the author decided to implement
+%some functionality of \CONTEXT\ by means of external
+%modules. At this moment you can load the following modules:
+Kvùli efektivnosti se autor rozhodl realizovat nìkteré funkce
+\CONTEXT{}u prostøednictvím vnìj¹ích modulù. Mù¾eme
+napøíklad zavést následující moduly:\footnote{Více viz seznam modulù
+  na \from[www:wiki-modules].} 
+
+%\startitemize[packed]
+%\item \type{chemic} for typesetting chemical structures
+%\item \type{units} for using \cap{SI} units
+%\item \type{pictex} for drawing pictures (is used in
+%      conjunction with module \type{chemic})
+%\item \type{chart} for drawing flowcharts and organograms
+%\stopitemize
+\startitemize[packed]
+\item \type{bib} sazba bibliografických referencí programem \BIBTEX;
+\item \type{chemic} sazba chemických struktur;
+\item \type{units} pou¾ití jednotek \cap{SI};
+\item \type{pictex} kreslení obrázkù (pou¾ívá se spoleènì s~modulem \type{chemic});
+\item \type{chart} náèrt vývojových diagramù a organizaèních schémat;
+\item \type{steps} náèrt stavových diagramù;
+\item \type{narrowtt} pou¾ití u¾¹ího strojopisu Computer Modern pro
+  verbatim prostøedí;
+\item \type{amsl} implementace \AMSMATH{} pøíkazù;
+\item \type{nath} pøirozená sazba matematiky, obsahuje modul \type{amsl};
+\item \type{streams} synchronizace nìkolika vstupních textù
+  (dvojjazyèná sazba);
+\item \type{gnuplot} pøímý zápis \GNUPLOT{} grafù;
+\item \type{lilypond} sazba notových osnov programem \LILYPOND.
+\stopitemize
+
+%Loading is done in the set up area of your input file and done
+%by means of:
+Zavedení se provede v~deklaraèní oblasti pøíkazem:
+
+\shortsetup{usemodule}
+
+%We have shown a number of examples of the module
+%\type{units}. Below we give two examples of the
+%modules \type{chemic} and \type{chart} without any further
+%explanations. These modules are described in two separate
+%manuals.
+Ji¾ jsme uvedli mno¾ství pøíkladù pou¾ití modulu
+\type{units}. Ní¾e bez dal¹ího vysvìtlení uvádíme dva pøíklady pou¾ití
+modulù \type{chemic} a~\type{chart}. Tyto moduly jsou popsány ve dvou
+samostatných pøíruèkách (\from[manual:chemic], \from[manual:charts]). 
+
+%Chemical structures may look very impressive.
+Chemické struktury mohou vypadat velice pùsobivì:
+
+%\startbuffer
+%\placeformula[-]
+%\startformula
+%\startchemical[scale=small,width=fit,top=3000,bottom=3000]
+%  \chemical[SIX,SB2356,DB14,Z2346,SR3,RZ3,-SR6,+SR6,-RZ6,+RZ6]
+%           [C,N,C,C,H,H,H]
+%  \chemical[PB:Z1,ONE,Z0,DIR8,Z0,SB24,DB7,Z27,PE][C,C,CH_3,O]
+%  \chemical[PB:Z5,ONE,Z0,DIR6,Z0,SB24,DB7,Z47,PE][C,C,H_3C,O]
+%  \chemical[SR24,RZ24][CH_3,H_3C]
+%  \bottext{Compound A}
+%\stopchemical
+%\stopformula
+%\stopbuffer
+\startbuffer
+\placeformula[-]
+\startformula
+\startchemical[scale=small,width=fit,top=3000,bottom=3000]
+  \chemical[SIX,SB2356,DB14,Z2346,SR3,RZ3,-SR6,+SR6,-RZ6,+RZ6]
+           [C,N,C,C,H,H,H]
+  \chemical[PB:Z1,ONE,Z0,DIR8,Z0,SB24,DB7,Z27,PE][C,C,CH_3,O]
+  \chemical[PB:Z5,ONE,Z0,DIR6,Z0,SB24,DB7,Z47,PE][C,C,H_3C,O]
+  \chemical[SR24,RZ24][CH_3,H_3C]
+  \bottext{Slouèenina A}
+\stopchemical
+\stopformula
+\stopbuffer
+
+\getbuffer
+
+%\CONTEXT\ relies on \METAPOST\ to draw these kind of
+%chemical structures. Although these chemical structures are
+%defined with only two or three commands, it takes some
+%practice to get the right results. This is how the input
+%looks:
+Pøi kreslení chemických struktur tohoto typu se \CONTEXT{} spoléhá na
+\METAPOST. Tøeba¾e jsou tyto chemické struktury definovány jenom
+pomocí dvou nebo tøí pøíkazù, na získání správných výsledkù je
+potøebná jistá praxe. Vstup mù¾e vypadat takto:
+
+\typebuffer
+
+%While using the module \type{chart} a definition of an
+%organogram may look like this:
+Modul \type{chart} si pøedstavíme ukázkou definice organizaèního
+schématu. Mù¾e vypadat následovnì:
+
+\setupFLOWcharts
+  [breedte=11\bodyfontsize,
+   hoogte=3\bodyfontsize,
+   dx=1\bodyfontsize,
+   dy=2\bodyfontsize]
+
+\setupFLOWlines
+  [pijl=nee]
+
+\startbuffer
+\startFLOWchart[organogram]
+  \startFLOWcell
+    \shape    {action}
+    \name     {01}
+    \location {2,1}
+    \text     {Hasselt}
+    \connect  [bt]{02}
+    \connect  [bt]{03}
+    \connect  [bt]{04}
+  \stopFLOWcell
+  \startFLOWcell
+    \shape    {action}
+    \name     {02}
+    \location {1,2}
+    \text     {Mastenbroek}
+  \stopFLOWcell
+  \startFLOWcell
+    \shape    {action}
+    \name     {03}
+    \location {2,2}
+    \text     {Genne}
+  \stopFLOWcell
+  \startFLOWcell
+    \shape    {action}
+    \name     {04}
+    \location {3,2}
+    \text     {Zwartewaterklooster}
+  \stopFLOWcell
+\stopFLOWchart
+
+\FLOWchart[organogram]
+\stopbuffer
+
+\typebuffer
+
+%The result will be:
+Výsledkem bude:
+
+\midaligned{\getbuffer}
+
+\stopcomponent
