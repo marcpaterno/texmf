@@ -2,7 +2,7 @@
 %  Identification
 %------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{memarticle}[2004/08/24]
+\ProvidesClass{memarticle}[2012/08/04, Marc Paterno paterno@fnal.gov]
 
 %------------------------------------------------------------
 %  Initial code
@@ -12,6 +12,7 @@
 \newboolean{draftwater} % Do a draft watermark?
 \newboolean{screen}% Handle pdfscreen ok
 \newboolean{notoc}% Do not include a toc
+\newboolean{norev}% DO not include a revision number
 
 %------------------------------------------------------------
 %  Declaration of options
@@ -20,6 +21,7 @@
 \DeclareOption{draftwater}{\setboolean{draftwater}{true}}
 \DeclareOption{screen}{\setboolean{screen}{true}}
 \DeclareOption{notoc}{\setboolean{notoc}{true}}
+\DeclareOption{norev}{\setboolean{norev}{true}}
 %------------------------------------------------------------
 %  Execution of options
 %------------------------------------------------------------
@@ -28,24 +30,30 @@
 %------------------------------------------------------------
 %  Package loading
 %------------------------------------------------------------
-\LoadClass[11pt,article,letterpaper,twoside]{memoir}
+\ifthenelse{\boolean{screen}}
+{%
+  \LoadClass[12pt, article]{memoir}
+}{%
+  \LoadClass[11pt, article,letterpaper,twoside]{memoir}
+}
+
+
 
 \usepackage
   { amsfonts%		extra mathematical fonts
-% , bookman%		still the best
-%  , lucidabr%
-  , palatino%
+  , bookman%		still the best
+%  , palatino%
 %  , pxfonts%
 %  , mathpazo%
   , booktabs%		"publication quality tables"
-  , color%		color capability
+  , xcolor%		color capability
   , cpplistings%	display code
   , colornames%
   , graphicx%		incorporate images
   , ifthen%		conditional source
   , xspace%		space character unless punctuation follows
-  , rcs%                RCS tags made available in LaTeX
   , varioref%           Smart references
+  , microtype%  adjust kerning and more
   }
 
 \usepackage[ragged]{sidecap}
@@ -53,15 +61,20 @@
 \usepackage%
     [ pdfpagelabels%
     , pdftex%
-%    , dvipdfm%
     , pdfstartview={FitV}%
-    , pdfpagemode={None}%
-    , pdfpagelayout=Facing%
+    , pdfpagemode={}%
+    , pdfpagelayout={}%
     ]%
     {hyperref}
 
 \usepackage{memhfixc}%		ensure hyperref/memoir compatability
-\tightlists
+
+\ifthenelse{\boolean{screen}}
+{
+}{%
+  \tightlists
+}
+
 
 %------------------------------------------------------------
 %  Main code
@@ -69,14 +82,12 @@
 
 \ifthenelse{\boolean{draftwater}}
  {%
-  \definecolor{draftcolor}{rgb}{1.0,1.0,0.8}%  Yellow
-  \usepackage[draft]{pdfdraftcopy} %"DRAFT" watermark
-  \draftstring{DRAFT \RCSRevision}
-  \draftcolor{draftcolor}
-  \draftfontfamily{ptm}%{hlh}
-  \draftfontsize{100}
-  \draftangle{45}
-%  \draftfontattrib{\upshape}
+  \usepackage{draftwatermark} %"DRAFT" watermark
+  %\SetWatermarkColor[rgb]{1.0,1.0,0.8}
+  \SetWatermarkColor{Yellow}
+
+  \SetWatermarkFontSize{100pt}
+  \SetWatermarkText{DRAFT}
  }{}
 
 %\renewcommand{\chapterautorefname}{\S}% use section symbol to refer to chapters
@@ -97,8 +108,6 @@
 %specify common hyperref options
 \hypersetup{%
     anchorcolor=black%
-  , backref=true%
-  , bookmarks=true%
   , bookmarksnumbered=true%
   , bookmarksopen=false%
   , bookmarksopenlevel=1%
@@ -126,15 +135,12 @@
 
 \maxsecnumdepth{subsubsection}
 
-\ifthenelse{\not{\boolean{screen}}}
-{%
 \setlength{\cftbeforechapterskip}{0in}
 \setlength{\cftbeforesectionskip}{0in}
-
+\setlength{\parindent}{0pt}
 \setlength  {\parskip     }{.5\baselineskip}
 \addtolength{\footnotesep }{.5\baselineskip}
 \checkandfixthelayout
-}{}
 
 \vfuzz2pt	% don't report over-full v-boxes if over-edge is small
 \hfuzz2pt	% don't report over-full h-boxes if over-edge is small
@@ -146,12 +152,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document's page style
 %
-% If [draftmode] was specified, we put RCS revision information on
-% the titlepage and on the odd-numbered page headers.
+% If [draftmode] was specified, we put the document version information on
+% the titlepage and on the page headers.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\docversion}{Revision~\RCSRevision}
+\ifthenelse{\boolean{norev}}
+{%
+\newcommand{\docver}{}
+\newcommand{\shortdocver}{}
+}{%
+\newcommand{\docver}{Revision~\docversion}
+\newcommand{\shortdocver}{(Rev.~\docversion)}
+}
 
 \setlength{\headwidth}{\textwidth}
 \makepagestyle   {memarticlepage}
@@ -162,22 +175,22 @@
 \ifthenelse{\boolean{draftmode}}
 {%
   \makeoddhead     {memarticlepage}%
-  {\normalfont\bfseries\shorttitle\ (Rev.~\RCSRevision)}%
+  {\normalfont\bfseries\brieftitle\ \shortdocver }%
   {}%
   {\normalfont\bfseries\thepage}
   \makeevenhead    {memarticlepage}%
   {\normalfont\bfseries\thepage}%
   {}%
-  {\normalfont\bfseries \docnumber}
+  {\normalfont\bfseries\brieftitle\ \shortdocver}
 }{%
   \makeoddhead     {memarticlepage}%
-  {\normalfont\bfseries\shorttitle}%
+  {\normalfont\bfseries\brieftitle\ \shortdocver}%
   {}%
   {\normalfont\bfseries\thepage}
   \makeevenhead    {memarticlepage}%
   {\normalfont\bfseries\thepage}%
   {}%
-  {\normalfont\bfseries \docnumber}
+  {\normalfont\bfseries\brieftitle\ \shortdocver}
 }
 
 
@@ -214,12 +227,16 @@
 \newcommand{\code}[1]% inlined (non-C++ code)?, filenames, etc.
   {\texttt{#1}}
 
+\newcommand{\name}[1]% names of products
+  {\textbf{#1}}
 
 \newcommand{\cpp}%				'C++'
-  {C\kern-0.15ex{+}\kern-0.1ex{+}\xspace}
+  {C\kern-0.15ex{+}\kern-0.1ex{+}}
+
+\newcommand{\ifixme}[1]{{\sffamily\slshape\color{cyan}\textbf{FIXME: } #1}}
 
 \newenvironment{fixme}%  format notes during document preparation
-  {\sffamily\slshape\color{red}}%
+  {\par\sffamily\slshape\color{cyan}\textbf{FIXME}}%
   {} % \rmfamily\upshape\normalcolor
 
 
@@ -231,6 +248,13 @@
 %% Symbols:
 
 \newcommand{\middot}{$\cdot$\xspace}% raised dot
+
+%------------------------------------------------------------
+% Setup for labels in the description environment; the default
+% bold is too strong when using the bookman font.
+%------------------------------------------------------------
+\renewcommand*{\descriptionlabel}[1]{\hspace\labelsep\normalfont\itshape #1:}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Abbreviations for general use:
@@ -258,26 +282,35 @@
 \thispagestyle{empty}
 \pagenumbering{arabic}
 
-\begin{center}
-  {\HUGE\doctitle}
+\begin{flushright}
+  { \color[named]{magenta} \HUGE \doctitle  }
+  
   { \vskip\baselineskip }
   { \authors } \\
-\ifthenelse{\boolean{draftmode}}%
-  {\docversion \\}   % print document revision for drafts
-  { }                % do not print doc revision for final
-  \docnumber
-\end{center}
+  { \docver }
+\end{flushright}
+
+% ----------------------------------------------------------------------
+%
+% The command \screenflush flushes the current page if, and only if,
+% we are in sreen mode.
+%
+\ifthenelse{\boolean{screen}}%
+  {%
+    \newcommand{\screenflush}{\clearpage}%
+  }{%
+    \newcommand{\screenflush}{\relax}%
+  }%
+
 
 
 % ----------------------------------------------------------------------
 %
 % Table of Contents:
 %
-%\begin{figure*}[h]
-%\centering\includegraphics[width=\linewidth]{pseudohaje.png}
-%\end{figure*}
 
-\ifthenelse{\not \boolean{notoc} \and \not \boolean{screen} }
+%\ifthenelse{\not \boolean{notoc} \and \not \boolean{screen} }
+\ifthenelse{\not \boolean{notoc} }
 {%
 \noindentcolorrule{Red}
 \tableofcontents*
@@ -290,7 +323,9 @@
 \ifthenelse{ \boolean{screen} }
 {%
 \setstocksize{6.25in}{8in}
-\usepackage[screen,nopanel]{pdfscreen}
+\usepackage[screen]{pdfscreen}
  \margins{0.65in}{0.65in}{0.65in}{0.65in}
  \screensize{6.25in}{8in}
 }{}
+
+

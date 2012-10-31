@@ -1,0 +1,77 @@
+% (c) 2011 Marc Paterno
+%
+% This file provides a beamer-theme for the my presentations.
+
+\ProvidesPackage{beamerthemeMFP}
+
+%% for the presentation
+\mode<presentation>
+
+%% Precise the Group and the titlepage logo
+\institute[Fermilab]{
+\begin{columns}[c]
+  \column{.5\paperwidth}
+Scientific Software Inf. Group\\
+Scientific Computing Division\\
+Fermilab
+  \column[c]{.5\paperwidth}
+    \includegraphics[width=0.5\paperwidth]{images/fermi-credit-black}
+\end{columns}}
+\hypersetup{pdfcreator={\LaTeX -Beamer with the MFP theme.}}
+
+%% Outer color theme
+%\usecolortheme{dolphin}
+
+%% Font theme
+\usepackage{mathptmx}
+%\usepackage{helvet} % use the font Helvetica
+% If you want to change the font you can specify it in the documentclass declaration options
+\usefonttheme{structureitalicserif}
+
+%% Set the background color
+\setbeamercolor{background canvas}{bg=white} %white = default
+
+% Interior beamer templates theme 
+\useinnertheme[shadow=true]{rounded} % prettier blocks appearence
+\usecolortheme{orchid} % Inner color theme: less agressive alternative: rose
+\setbeamerfont{block title}{size={}} %normal size for block titles
+
+%% Specify how to display the frame title
+\setbeamerfont{frametitle}{size={\Large}} %\Large size for frame titles
+\setbeamercolor{title}{fg=blue!70!black!80!white,bg=blue!5!white}
+\setbeamercolor{frametitle}{fg=blue!70!black!70!white}
+% Create the shaded title bar
+\newcommand{\deftitlebar}[5]{\pgfdeclarehorizontalshading{frametitlebarhshad}{#1}{color(#2)=(#3); color(#4)=(#5)}}
+\deftitlebar{0.01\paperheight}{0\paperwidth}{black}{\the\paperwidth}{white} % can be changed during the presentation
+\setbeamertemplate{frametitle}
+{
+	\hspace*{-0.035\paperwidth} \vbox{\insertframetitle}\par
+	\hspace*{-0.045\paperwidth}\pgfuseshading{frametitlebarhshad}
+}
+
+%% Precise head and foot -lines
+
+\setbeamertemplate{headline}[default] %no headline
+\setbeamercolor{footline}{fg=black!40!white}
+\setbeamertemplate{footline}{
+% taken from theme infolines and adapted
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
+    \insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
+    \insertshortdate
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
+	page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+%% Precise the tableofcontents
+\setbeamertemplate{sections/subsections in toc}[square]%[ball unnumbered]
+\setbeamertemplate{items}[square]%[ball unnumbered]
+
+\mode
+<all>

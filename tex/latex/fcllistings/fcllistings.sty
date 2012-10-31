@@ -1,18 +1,18 @@
 %======================================================================
 %
-%  cpplistings - provide for listings and inline snippets of C++ code
+%  fcllistings - provide for listings and inline snippets of C++ code
 %
 %======================================================================
 %
 % To produce an inline code snippet:
-%   \cppcode[option]{code}
-% Uses \cppfgcolor and style=cppstyle
+%   \fclcode[option]{code}
+% Uses \fclfgcolor and style=fclstyle
 %
 % To produce a listing of code:
-%   \begin{cpplisting}[option]
+%   \begin{fcllisting}[option]
 %   ...
-%   \end{cpplisting}
-% Uses \cppfgcolor, \cppbgcolor, style=cpplistingstyle, and style=cppstyle
+%   \end{fcllisting}
+% Uses \fclfgcolor, \fclbgcolor, style=fcllistingstyle, and style=fclstyle
 %
 %======================================================================
 
@@ -21,7 +21,7 @@
 % Package identification:
 
 \def\filedesc{C++ listings}
-\def\filedate{2004/02/28}
+\def\filedate{2011/09/08}
 \def\fileauth{W. E. Brown<wb at fnal dot gov>}
 
 
@@ -31,11 +31,11 @@
 \NeedsTeXFormat{LaTeX2e}%
   [1995/12/01]
 
-\ProvidesPackage{cpplistings}
+\ProvidesPackage{fcllistings}
   [\filedate\space\filedesc\space(\fileauth)]
 
 % Exit if the style file is already loaded
-\ifx \cpplistingsloaded\relax \endinput\else\let\cpplistingsloaded\relax\fi
+\ifx \fcllistingsloaded\relax \endinput\else\let\fcllistingsloaded\relax\fi
 
 
 %----------------------------------------------------------------------
@@ -45,24 +45,24 @@
 \RequirePackage{colornames}
 
 \RequirePackage{listings}
-\lstloadlanguages{[ISO]C++}
+%\lstloadlanguages{[ISO]C++}
 
 
 %----------------------------------------------------------------------
 % Color customization:
 
-\newcommand{\cppbgcolor}%	applies to listings only
+\newcommand{\fclbgcolor}%	applies to listings only
   {\color[gray]{.9}}
 
-\newcommand{\cppfgcolor}%	applies to listings and inline snippets
+\newcommand{\fclfgcolor}%	applies to listings and inline snippets
   {\color{Navy}}
 
 
 %----------------------------------------------------------------------
 % Styles:
 
-\lstdefinestyle{cpplistingstyle}%	applies to listings only
-  { backgroundcolor	= \cppbgcolor
+\lstdefinestyle{fcllistingstyle}%	applies to listings only
+  { backgroundcolor	= \fclbgcolor
   , breaklines		= false
   , emptylines		= 1
   , escapeinside	= {(*@}{@*)}
@@ -73,38 +73,40 @@
   , numberstyle		= \tiny
   , numbers		= left
   , tabsize		= 2
-  , xleftmargin		= 1em
+  , xleftmargin		= 2em
+  , basicstyle		= \ttfamily\fclfgcolor
+  , commentstyle	= \itshape\fclfgcolor
+  , identifierstyle	= \fclfgcolor
+  , stringstyle		= \fclfgcolor
   }
 
-\lstdefinestyle{cppstyle}%	applies to listings and inline snippets
-  { basicstyle		= \ttfamily\cppfgcolor
-  , commentstyle	= \itshape\cppfgcolor
-  , identifierstyle	= \cppfgcolor
-  , keywordstyle	= %\bfseries\cppfgcolor
-  , stringstyle		= \cppfgcolor
-  , showstringspaces    = false
+\lstdefinestyle{fclstyle}%	applies to listings and inline snippets
+  { basicstyle		= \ttfamily%\fclfgcolor
+  , commentstyle	= \itshape%\fclfgcolor
+  , identifierstyle	= %\fclfgcolor
+  , keywordstyle	= %\bfseries\fclfgcolor
+  , stringstyle		= %\fclfgcolor
   }
 
 
 %----------------------------------------------------------------------
 % Language definition:
 
-\lstdefinelanguage{isocpp}
-  [ISO]{C++}
-  { style = cppstyle }
+\lstdefinelanguage{FHiCL}
+  %[ISO]{C++}
+  { style = fclstyle }
 
 
 %----------------------------------------------------------------------
 % C++ code display:
 
-\newcommand{\cppcode}[2][]%	inline snippets
-  {\lstinline[language=isocpp,#1]{#2}}
+\newcommand{\fclcode}[2][]%	inline snippets
+  {\lstinline[language=FHiCL,basicstyle=\ttfamily\bfseries,#1]{#2}}
 
-\lstnewenvironment{cpplisting}[1][]%	listings
+\lstnewenvironment{fcllisting}[1][]%	listings
   { \lstset
-      { language    = isocpp
-      , style       = cpplistingstyle
-      , captionpos  = b
+      { language	= FHiCL
+      , style		= fcllistingstyle
       , #1
   }   }
   {}
