@@ -2,7 +2,7 @@
 %  Identification
 %------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{memarticle}[2012/08/04, Marc Paterno paterno@fnal.gov]
+\ProvidesClass{memarticle}[2013/08/19, Marc Paterno paterno@fnal.gov]
 
 %------------------------------------------------------------
 %  Initial code
@@ -47,7 +47,8 @@
 %  , mathpazo%
   , booktabs%		"publication quality tables"
   , xcolor%		color capability
-  , cpplistings%	display code
+  , cpplistings%	display code for C++
+  , pylistings%
   , colornames%
   , graphicx%		incorporate images
   , ifthen%		conditional source
@@ -233,10 +234,15 @@
 \newcommand{\cpp}%				'C++'
   {C\kern-0.15ex{+}\kern-0.1ex{+}}
 
-\newcommand{\ifixme}[1]{{\sffamily\slshape\color{cyan}\textbf{FIXME: } #1}}
+%\newcommand{\ifixme}[1]{{\sffamily\slshape\color{cyan}\textbf{FIXME: } %#1}}
+\newcommand{\ifixme}[1]{{\slshape\color{cyan}\textbf{FIXME: } #1}}
+
+% \newenvironment{fixme}%  format notes during document preparation
+%   {\par\sffamily\slshape\color{cyan}\textbf{FIXME}}%
+%   {} % \rmfamily\upshape\normalcolor
 
 \newenvironment{fixme}%  format notes during document preparation
-  {\par\sffamily\slshape\color{cyan}\textbf{FIXME}}%
+  {\par\slshape\color{cyan}\textbf{FIXME}}%
   {} % \rmfamily\upshape\normalcolor
 
 

@@ -53,7 +53,7 @@
 % Color customization:
 
 \newcommand{\cppbgcolor}%  applies to listings only
-  {\color[gray]{.9}}
+  {\color[gray]{.95}}
 
 \newcommand{\cppfgcolor}%  applies to listings only
   {}
@@ -73,7 +73,8 @@
   , framerule           = 1.5pt
   , framexleftmargin    = 0pt
   , numberblanklines    = false
-  , numbers     = none
+  , numbers     = left
+  , numberstyle = \small
   , tabsize     = 2
   , xleftmargin     = 0pt
   , xrightmargin        = 0pt
@@ -84,7 +85,7 @@
   { basicstyle      = \ttfamily\cppfgcolor
   , commentstyle    = \itshape\cppfgcolor
   , identifierstyle = \cppfgcolor
-  , keywordstyle    = %\bfseries\cppfgcolor
+  , keywordstyle    = \bfseries\cppfgcolor
   , stringstyle     = \cppfgcolor
   }
 

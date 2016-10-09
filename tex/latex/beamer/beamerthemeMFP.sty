@@ -29,6 +29,7 @@ Fermilab
 \usefonttheme{structureitalicserif}
 
 %% Set the background color
+\definecolor{fermidarkblue}{RGB}{0,76,151}
 \setbeamercolor{background canvas}{bg=white} %white = default
 
 % Interior beamer templates theme 
@@ -38,7 +39,8 @@ Fermilab
 
 %% Specify how to display the frame title
 \setbeamerfont{frametitle}{size={\Large}} %\Large size for frame titles
-\setbeamercolor{title}{fg=blue!70!black!80!white,bg=blue!5!white}
+%\setbeamercolor{title}{fg=blue!70!black!80!white,bg=blue!5!white} % original
+\setbeamercolor{title}{fg=fermidarkblue}
 \setbeamercolor{frametitle}{fg=blue!70!black!70!white}
 % Create the shaded title bar
 \newcommand{\deftitlebar}[5]{\pgfdeclarehorizontalshading{frametitlebarhshad}{#1}{color(#2)=(#3); color(#4)=(#5)}}
