@@ -1,0 +1,112 @@
+%======================================================================
+%
+%  pylistings - provide for listings and inline snippets of Python code
+%
+% Based on cpplistings, by Walter Brown.
+%
+%======================================================================
+%
+% To produce an inline code snippet:
+%   \pycode[option]{code}
+% Uses \pyfgcolor and style=pystyle
+%
+% To produce a listing of code:
+%   \begin{pylisting}[option]
+%   ...
+%   \end{pylisting}
+% Uses \pyfgcolor, \pybgcolor, style=pylistingstyle, and style=pystyle
+%
+%======================================================================
+
+%----------------------------------------------------------------------
+% Package identification:
+
+\def\filedesc{Python listings}
+\def\filedate{2013/08/19}
+\def\fileauth{Marc Paterno at fnal dot gov>}
+
+
+%----------------------------------------------------------------------
+% Package boilerplate:
+
+\NeedsTeXFormat{LaTeX2e}%
+  [1995/12/01]
+
+\ProvidesPackage{pylistings}
+  [\filedate\space\filedesc\space(\fileauth)]
+
+% Exit if the style file is already loaded
+\ifx \pylistingsloaded\relax \endinput\else\let\pylistingsloaded\relax\fi
+
+%----------------------------------------------------------------------
+% Prerequisite packages and initial configuration:
+
+\RequirePackage{color}
+\RequirePackage{colornames}
+
+\RequirePackage{listings}
+\lstloadlanguages{Python}
+
+
+%----------------------------------------------------------------------
+% Color customization:
+
+\newcommand{\pybgcolor}%	applies to listings only
+  {\color[gray]{.9}}
+
+\newcommand{\pyfgcolor}%	applies to listings and inline snippets
+  {\color{Navy}}
+
+
+%----------------------------------------------------------------------
+% Styles:
+
+\lstdefinestyle{pylistingstyle}%	applies to listings only
+  { backgroundcolor	= \pybgcolor
+  , breaklines		= false
+  , emptylines		= 1
+  , escapeinside	= {(*@}{@*)}
+  , frame		= none
+  , framexleftmargin	= .35em
+  , numberblanklines	= false
+  , numbersep		= 10pt
+  , numberstyle		= \tiny
+  , numbers		= left
+  , tabsize		= 2
+  , xleftmargin		= 1em
+  }
+
+\lstdefinestyle{pystyle}%	applies to listings and inline snippets
+  { basicstyle		= \ttfamily\pyfgcolor
+  , commentstyle	= \itshape\pyfgcolor
+  , identifierstyle	= \pyfgcolor
+  , keywordstyle	= %\bfseries\pyfgcolor
+  , stringstyle		= \pyfgcolor
+  , showstringspaces    = false
+  }
+
+
+%----------------------------------------------------------------------
+% Language definition:
+
+\lstdefinelanguage{py}
+  { style = pystyle }
+
+%----------------------------------------------------------------------
+% Python code display:
+
+\newcommand{\pycode}[2][]%	inline snippets
+  {\lstinline[language=py,#1]{#2}}
+
+\lstnewenvironment{pylisting}[1][]%	listings
+  { \lstset
+      { language    = py
+      , style       = pylistingstyle
+      , captionpos  = b
+      , #1
+  }   }
+  {}
+
+
+%======================================================================
+\endinput
