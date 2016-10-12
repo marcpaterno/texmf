@@ -1,79 +1,195 @@
-% (c) 2011 Marc Paterno
+% (c) 2016 Marc Paterno
 %
-% This file provides a beamer-theme for the my presentations.
+% This file provides a beamer-theme for my presentations.
 
 \ProvidesPackage{beamerthemeMFP}
+
+\usepackage{pgf}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{fontspec} % Make sure to use xelatex!
+%\usepackage{pdfrender}
+
+%----------------------------------------------------------------------
 
 %% for the presentation
 \mode<presentation>
 
+%----------------------------------------------------------------------
+% Color theme
+%----------------------------------------------------------------------
+
+% Primary colors
+\definecolor{nalblue}{RGB}{0,76,151}
+\definecolor{nalbluelight}{RGB}{65,182,230}
+\definecolor{nalbluedark}{RGB}{0,40,85}
+
+% Secondardy colors
+\definecolor{marlinbluelight}{RGB}{153,214,234}
+\definecolor{marlinblue}{RGB}{0,181,226}
+\definecolor{marlinkbluedark}{RGB}{0,133,173}
+
+\definecolor{nalgreenlight}{RGB}{120,190,32}
+\definecolor{nalgreen}{RGB}{76,140,43}
+\definecolor{nalgreendark}{RGB}{54,87,59}
+
+\definecolor{masseyfergusonredlight}{RGB}{175,39,47}
+\definecolor{masseyfergusonred}{RGB}{138,42,43}
+\definecolor{masseyfergusonreddark}{RGB}{100,51,53}
+
+\definecolor{orangelight}{RGB}{246,141,46}
+\definecolor{orange}{RGB}{203,96,21}
+\definecolor{orangedark}{RGB}{185,71,0}
+
+\definecolor{prariegoldlight}{RGB}{245,225,164}
+\definecolor{prariegold}{RGB}{254,209,65}
+\definecolor{prariegolddark}{RGB}{234,170,0}
+
+\definecolor{gray45}{RGB}{167,168,170}
+\definecolor{gray75}{RGB}{99,102,106}
+\definecolor{richblack}{RGB}{0,0,0}
+
+\setbeamercolor{frametitle}{fg = nalblue}
+\setbeamercolor{title}{fg = nalblue}
+\setbeamercolor{section in toc}{fg = nalblue}
+\setbeamercolor{section in toc shaded}{fg = nalblue}
+
+\setbeamercolor{item}{fg = richblack}
+\setbeamercolor{subitem}{fg = richblack}
+\setbeamercolor{subsubitem}{fg = richblack}
+
+\setbeamercolor{description item}{fg = richblack}
+\setbeamercolor{caption}{fg = richblack}
+\setbeamercolor{caption name}{fg = richblack}
+
+\setbeamercolor{block title}{fg = white, bg = nalbluedark}
+\setbeamercolor{block body}{bg = marlinbluelight}
+
+\setbeamercolor{block title alerted}{fg = white, bg = masseyfergusonreddark}
+\setbeamercolor{block body alerted}{fg = white, bg = masseyfergusonredlight}
+
+\setbeamercolor{block title example}{fg = white, bg = prariegolddark}
+\setbeamercolor{block body example}{bg = prariegoldlight}
+
+\setbeamercolor{normal text}{fg = richblack}
+
+%----------------------------------------------------------------------
+% Font theme
+%----------------------------------------------------------------------
+\usefonttheme{default}
+%\usefonttheme{professionalfonts} % suppress Beamer replacements
+\setbeamerfont{title}{size = \LARGE}
+\setbeamerfont{frametitle}{size = \Large}
+\usefonttheme{structurebold}
+\setbeamerfont*{footline}{size = \tiny}
+
+%----------------------------------------------------------------------
+% Inner theme
+% This controls things inside the body of a frame
+%----------------------------------------------------------------------
+\useinnertheme[shadow=true]{rounded}
+\setbeamertemplate{itemize items}[ball]
+%\setbeamertemplate{sections/subsections in toc}[ball unnumbered]
+
+%----------------------------------------------------------------------
+% Outer theme
+% This controls things outside the body of a frame (e.g. title,
+% footers, ...)
+%----------------------------------------------------------------------
+
+% Set up the footer. We turn off the navigation symbols, because they clutter
+% the footer area.
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}{%
+\color{nalblue}
+\hfil \hspace{1 em}
+ \raisebox{0.45 em}{\color{marlinbluelight}\rule{0.8\textwidth}{0.5 em}}
+ %\hspace{1 em}
+ \includegraphics[width=.125\textwidth]{FNAL-Logo-NAL-Blue}
+ \hfil
+ \break
+ \vskip 0.5 em
+ \hspace{2.5 em}
+ \insertframenumber/\inserttotalframenumber
+ \hspace{3 em}
+ \insertdate
+ \hspace{3 em}
+ \insertshortauthor\,|\,\insertshorttitle
+ \hfil
+ \vskip 1.0 em
+}
+
+
+% Title page
+% \setbeamerfont{author}{size=\Huge}
+% \setbeamerfont{institute}{size=\normalsize\itshape}
+% \setbeamerfont{title}{size=\fontsize{30}{36}\bfseries}
+% \setbeamerfont{subtitle}{size=\Large\normalfont\slshape}
+\setbeamertemplate{title page}{%
+% \vskip -0.66 in
+% \includegraphics[width=\paperwidth]{title-banner}
+% \break%
+% \includegraphics[width=\paperwidth]{title-background}
+% \vfill
+
+\begin{tikzpicture}[remember picture,overlay]
+  % current page.north and anchor=north leaves a small amount of space above the ribbon.
+	% The yshift value needed to close the gap was determined experimentally.
+  \node[anchor=north] at ([yshift=0.0535 in]current page.north) {\includegraphics[width=\paperwidth]{title-graphic}};
+\end{tikzpicture}
+ \vskip 2.5 in%
+ \begin{centering}
+ \usebeamercolor[fg]{title}
+ {\usebeamerfont{title}\inserttitle}\break
+ {\usebeamerfont{subtitle}\insertsubtitle}\break
+ \insertauthor\break
+ \insertdate
+ \end{centering}
+}
+
 %% Precise the Group and the titlepage logo
-\institute[Fermilab]{
-\begin{columns}[c]
-  \column{.5\paperwidth}
-Scientific Software Inf. Group\\
-Scientific Computing Division\\
-Fermilab
-  \column[c]{.5\paperwidth}
-    \includegraphics[width=0.5\paperwidth]{images/fermi-credit-black}
-\end{columns}}
-\hypersetup{pdfcreator={\LaTeX -Beamer with the MFP theme.}}
+%% \institute[Fermilab]{
+%% \begin{columns}[c]
+%%   \column{.5\paperwidth}
+%% Scientific Software Inf. Group\\
+%% Scientific Computing Division\\
+%% Fermilab
+%%   \column[c]{.5\paperwidth}
+%%     \includegraphics[width=0.5\paperwidth]{images/fermi-credit-black}
+%% \end{columns}}
+%% \hypersetup{pdfcreator={\LaTeX -Beamer with the MFP theme.}}
 
-%% Outer color theme
-%\usecolortheme{dolphin}
 
-%% Font theme
-\usepackage{mathptmx}
-%\usepackage{helvet} % use the font Helvetica
-% If you want to change the font you can specify it in the documentclass declaration options
-\usefonttheme{structureitalicserif}
 
-%% Set the background color
-\definecolor{fermidarkblue}{RGB}{0,76,151}
-\setbeamercolor{background canvas}{bg=white} %white = default
+%% % Create the shaded title bar
+%% \newcommand{\deftitlebar}[5]{\pgfdeclarehorizontalshading{frametitlebarhshad}{#1}{color(#2)=(#3); color(#4)=(#5)}}
+%% \deftitlebar{0.01\paperheight}{0\paperwidth}{black}{\the\paperwidth}{white} % can be changed during the presentation
+%% \setbeamertemplate{frametitle}
+%% {
+%% 	\hspace*{-0.035\paperwidth} \vbox{\insertframetitle}\par
+%% 	\hspace*{-0.045\paperwidth}\pgfuseshading{frametitlebarhshad}
+%% }
 
-% Interior beamer templates theme 
-\useinnertheme[shadow=true]{rounded} % prettier blocks appearence
-\usecolortheme{orchid} % Inner color theme: less agressive alternative: rose
-\setbeamerfont{block title}{size={}} %normal size for block titles
+%% %% Precise head and foot -lines
 
-%% Specify how to display the frame title
-\setbeamerfont{frametitle}{size={\Large}} %\Large size for frame titles
-%\setbeamercolor{title}{fg=blue!70!black!80!white,bg=blue!5!white} % original
-\setbeamercolor{title}{fg=fermidarkblue}
-\setbeamercolor{frametitle}{fg=blue!70!black!70!white}
-% Create the shaded title bar
-\newcommand{\deftitlebar}[5]{\pgfdeclarehorizontalshading{frametitlebarhshad}{#1}{color(#2)=(#3); color(#4)=(#5)}}
-\deftitlebar{0.01\paperheight}{0\paperwidth}{black}{\the\paperwidth}{white} % can be changed during the presentation
-\setbeamertemplate{frametitle}
-{
-	\hspace*{-0.035\paperwidth} \vbox{\insertframetitle}\par
-	\hspace*{-0.045\paperwidth}\pgfuseshading{frametitlebarhshad}
-}
-
-%% Precise head and foot -lines
-
-\setbeamertemplate{headline}[default] %no headline
+%% \setbeamertemplate{headline}[default] %no headline
 \setbeamercolor{footline}{fg=black!40!white}
-\setbeamertemplate{footline}{
-% taken from theme infolines and adapted
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-    \insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-    \insertshortdate
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
-	page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex} 
-  \end{beamercolorbox}}%
-  \vskip0pt%
-}
+%% \setbeamertemplate{footline}{
+%% % taken from theme infolines and adapted
+%%   \leavevmode%
+%%   \hbox{%
+%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
+%%     \insertshortauthor
+%%   \end{beamercolorbox}%
+%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
+%%     \insertshortdate
+%%   \end{beamercolorbox}%
+%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
+%% 	page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex} 
+%%   \end{beamercolorbox}}%
+%%   \vskip0pt%
+%% }
 
-%% Precise the tableofcontents
-\setbeamertemplate{sections/subsections in toc}[square]%[ball unnumbered]
-\setbeamertemplate{items}[square]%[ball unnumbered]
 
 \mode
 <all>
