@@ -8,12 +8,19 @@
 \usepackage{pgf}
 \usepackage{color}
 \usepackage{tikz}
-
+\usepackage{mathptmx}
+\usepackage{helvet}
 
 %----------------------------------------------------------------------
 
 %% for the presentation
 \mode<presentation>
+
+
+%----------------------------------------------------------------------
+% Page, margin, and aspect control.
+%----------------------------------------------------------------------
+\setbeamersize{text margin left=1 em,text margin right=1 em}
 
 %----------------------------------------------------------------------
 % Color theme
@@ -78,10 +85,12 @@
 %----------------------------------------------------------------------
 \usefonttheme{default}
 %\usefonttheme{professionalfonts} % suppress Beamer replacements
+\usefonttheme{structurebold}
 \setbeamerfont{title}{size = \LARGE}
 \setbeamerfont{frametitle}{size = \Large}
-\usefonttheme{structurebold}
 \setbeamerfont*{footline}{size = \tiny}
+%\setbeamerfont{itemize/enumerate body}{size = \normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size = \small}
 
 %----------------------------------------------------------------------
 % Inner theme
