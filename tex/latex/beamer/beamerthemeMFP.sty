@@ -87,7 +87,7 @@
 %\usefonttheme{professionalfonts} % suppress Beamer replacements
 \usefonttheme{structurebold}
 \setbeamerfont{title}{size = \LARGE}
-\setbeamerfont{frametitle}{size = \Large}
+\setbeamerfont{frametitle}{size = \large}
 \setbeamerfont*{footline}{size = \tiny}
 %\setbeamerfont{itemize/enumerate body}{size = \normalsize}
 \setbeamerfont{itemize/enumerate subbody}{size = \small}
@@ -159,49 +159,9 @@
  \end{centering}
 }
 
-%% Precise the Group and the titlepage logo
-%% \institute[Fermilab]{
-%% \begin{columns}[c]
-%%   \column{.5\paperwidth}
-%% Scientific Software Inf. Group\\
-%% Scientific Computing Division\\
-%% Fermilab
-%%   \column[c]{.5\paperwidth}
-%%     \includegraphics[width=0.5\paperwidth]{images/fermi-credit-black}
-%% \end{columns}}
-%% \hypersetup{pdfcreator={\LaTeX -Beamer with the MFP theme.}}
-
-
-
-%% % Create the shaded title bar
-%% \newcommand{\deftitlebar}[5]{\pgfdeclarehorizontalshading{frametitlebarhshad}{#1}{color(#2)=(#3); color(#4)=(#5)}}
-%% \deftitlebar{0.01\paperheight}{0\paperwidth}{black}{\the\paperwidth}{white} % can be changed during the presentation
-%% \setbeamertemplate{frametitle}
-%% {
-%% 	\hspace*{-0.035\paperwidth} \vbox{\insertframetitle}\par
-%% 	\hspace*{-0.045\paperwidth}\pgfuseshading{frametitlebarhshad}
-%% }
-
 %% %% Precise head and foot -lines
 
-%% \setbeamertemplate{headline}[default] %no headline
-\setbeamercolor{footline}{fg=black!40!white}
-%% \setbeamertemplate{footline}{
-%% % taken from theme infolines and adapted
-%%   \leavevmode%
-%%   \hbox{%
-%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-%%     \insertshortauthor
-%%   \end{beamercolorbox}%
-%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-%%     \insertshortdate
-%%   \end{beamercolorbox}%
-%%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{}%
-%% 	page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex} 
-%%   \end{beamercolorbox}}%
-%%   \vskip0pt%
-%% }
-
+\setbeamertemplate{headline}{\vskip1.5em}
 
 \mode
 <all>
