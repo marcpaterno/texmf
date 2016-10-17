@@ -7,24 +7,6 @@
 \usepackage{xspace}
 \usepackage{pgf}
 \usepackage{color}
-\usepackage{tikz}
-\usepackage{mathptmx}
-\usepackage{helvet}
-
-%----------------------------------------------------------------------
-
-%% for the presentation
-\mode<presentation>
-
-
-%----------------------------------------------------------------------
-% Page, margin, and aspect control.
-%----------------------------------------------------------------------
-\setbeamersize{text margin left=1 em,text margin right=1 em}
-
-%----------------------------------------------------------------------
-% Color theme
-%----------------------------------------------------------------------
 
 % Primary colors
 \definecolor{nalblue}{RGB}{0,76,151}
@@ -56,6 +38,27 @@
 \definecolor{gray75}{RGB}{99,102,106}
 \definecolor{richblack}{RGB}{0,0,0}
 
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\hypersetup{colorlinks,linkcolor=,urlcolor=orangedark}
+
+%----------------------------------------------------------------------
+
+%% for the presentation
+\mode<presentation>
+
+
+%----------------------------------------------------------------------
+% Page, margin, and aspect control.
+%----------------------------------------------------------------------
+\setbeamersize{text margin left=1 em,text margin right=1 em}
+
+%----------------------------------------------------------------------
+% Color theme
+%----------------------------------------------------------------------
+
+
 \setbeamercolor{frametitle}{fg = nalblue}
 \setbeamercolor{title}{fg = nalblue}
 \setbeamercolor{section in toc}{fg = nalblue}
@@ -79,6 +82,7 @@
 \setbeamercolor{block body example}{bg = prariegoldlight}
 
 \setbeamercolor{normal text}{fg = richblack}
+\setbeamercolor{alerted text}{fg = masseyfergusonredlight}
 
 %----------------------------------------------------------------------
 % Font theme
