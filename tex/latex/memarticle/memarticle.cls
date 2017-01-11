@@ -2,7 +2,7 @@
 %  Identification
 %------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{memarticle}[2013/08/19, Marc Paterno paterno@fnal.gov]
+\ProvidesClass{memarticle}[2017/01/11, Marc Paterno paterno@fnal.gov]
 
 %------------------------------------------------------------
 %  Initial code
@@ -54,7 +54,8 @@
   , ifthen%		conditional source
   , xspace%		space character unless punctuation follows
   , varioref%           Smart references
-  , microtype%  adjust kerning and more
+  , microtype%          adjust kerning and more
+  , paralist%           in-paragraph enumerations
   }
 
 \usepackage[ragged]{sidecap}
