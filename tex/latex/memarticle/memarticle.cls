@@ -12,7 +12,8 @@
 \newboolean{draftwater} % Do a draft watermark?
 \newboolean{screen}% Handle pdfscreen ok
 \newboolean{notoc}% Do not include a toc
-\newboolean{norev}% DO not include a revision number
+\newboolean{norev}% Do not include a revision number
+\newboolean{techpub}% Do include a TM number (for FNAL TechPubs)
 
 %------------------------------------------------------------
 %  Declaration of options
@@ -22,6 +23,7 @@
 \DeclareOption{screen}{\setboolean{screen}{true}}
 \DeclareOption{notoc}{\setboolean{notoc}{true}}
 \DeclareOption{norev}{\setboolean{norev}{true}}
+\DeclareOption{techpub}{\setboolean{techpub}{true}}
 %------------------------------------------------------------
 %  Execution of options
 %------------------------------------------------------------
@@ -36,8 +38,6 @@
 }{%
   \LoadClass[11pt, article,letterpaper,twoside]{memoir}
 }
-
-
 
 \usepackage
   { amsfonts%		extra mathematical fonts
@@ -294,6 +294,12 @@
   
   { \vskip\baselineskip }
   { \authors } \\
+ \ifthenelse{\boolean{techpub}}
+ {%
+  { \tmnumber }\\
+ }{%
+  % Nothing to do
+ }
   { \docver }
 \end{flushright}
 
