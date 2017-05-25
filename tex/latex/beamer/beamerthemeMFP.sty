@@ -128,7 +128,7 @@
  \hspace{2.5 em}
  \insertframenumber/\inserttotalframenumber
  \hspace{3 em}
- \insertdate
+ \insertshortdate
  \hspace{3 em}
  \insertshortauthor\,|\,\insertshorttitle
  \hfil
@@ -150,16 +150,18 @@
 
 \begin{tikzpicture}[remember picture,overlay]
   % current page.north and anchor=north leaves a small amount of space above the ribbon.
-	% The yshift value needed to close the gap was determined experimentally.
+  % The yshift value needed to close the gap was determined experimentally.
   \node[anchor=north] at ([yshift=0.0535 in]current page.north) {\includegraphics[width=\paperwidth]{title-graphic}};
 \end{tikzpicture}
- \vskip 2.5 in%
+ \vskip 2in%
+ \vfill
  \begin{centering}
  \usebeamercolor[fg]{title}
  {\usebeamerfont{title}\inserttitle}\break
  {\usebeamerfont{subtitle}\insertsubtitle}\break
  \insertauthor\break
- \insertdate
+ \textit{\insertdate}
+ \vfill
  \end{centering}
 }
 
