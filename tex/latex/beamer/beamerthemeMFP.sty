@@ -7,6 +7,7 @@
 \usepackage{xspace}
 \usepackage{pgf}
 \usepackage{color}
+\usepackage{microtype}
 
 % Primary colors
 \definecolor{nalblue}{RGB}{0,76,151}
@@ -88,7 +89,7 @@
 % Font theme
 %----------------------------------------------------------------------
 \usefonttheme{default}
-%\usefonttheme{professionalfonts} % suppress Beamer replacements
+\usefonttheme{professionalfonts} % suppress Beamer replacements
 \usefonttheme{structurebold}
 \setbeamerfont{title}{size = \LARGE}
 \setbeamerfont{frametitle}{size = \large}
@@ -137,34 +138,38 @@
 
 
 % Title page
-% \setbeamerfont{author}{size=\Huge}
-% \setbeamerfont{institute}{size=\normalsize\itshape}
-% \setbeamerfont{title}{size=\fontsize{30}{36}\bfseries}
-% \setbeamerfont{subtitle}{size=\Large\normalfont\slshape}
-\setbeamertemplate{title page}{%
-% \vskip -0.66 in
-% \includegraphics[width=\paperwidth]{title-banner}
-% \break%
-% \includegraphics[width=\paperwidth]{title-background}
-% \vfill
 
+\setbeamertemplate{title page}{%
 \begin{tikzpicture}[remember picture,overlay]
   % current page.north and anchor=north leaves a small amount of space above the ribbon.
   % The yshift value needed to close the gap was determined experimentally.
   \node[anchor=north] at ([yshift=0.0535 in]current page.north) {\includegraphics[width=\paperwidth]{title-graphic}};
 \end{tikzpicture}
- \vskip 2in%
- \vfill
- \begin{centering}
+
+ %\vskip 2in%
+ %\vfill
+ %\begin{centering}
+ \vskip 0.67\paperheight
  \usebeamercolor[fg]{title}
  {\usebeamerfont{title}\inserttitle}\break
  {\usebeamerfont{subtitle}\insertsubtitle}\break
  \insertauthor\break
  \textit{\insertdate}
- \vfill
- \end{centering}
+ %\vfill
+ %\end{centering}
 }
 
+% Part page
+\setbeamertemplate{part page}{%
+\setbeamertemplate{footline}{}
+\vfill
+\usebeamercolor[fg]{title}
+\usebeamerfont{title}\insertpart
+\vfill
+}
+
+\AtBeginPart{\frame{\partpage}}
+   
 %% %% Precise head and foot -lines
 
 \setbeamertemplate{headline}{\vskip1.5em}
